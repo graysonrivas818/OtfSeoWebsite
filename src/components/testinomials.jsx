@@ -71,18 +71,7 @@ const Testimonials = () => {
         return () => slider.removeEventListener('scroll', handleScroll);
     }, []);
 
-    // Add this function to handle dot clicks
-    const goToSlide = (index) => {
-        const slider = sliderRef.current;
-        if (!slider) return;
-
-        const cardWidth = slider.firstChild?.clientWidth || 300;
-        const gap = 24;
-        slider.scrollTo({
-            left: index * (cardWidth + gap),
-            behavior: 'smooth'
-        });
-    };
+    
     const isMobile = useMobile();
 
     return (
@@ -218,17 +207,21 @@ const Testimonials = () => {
                         </div>
                     ))}
                 </div>
-                <div className="flex sm:hidden justify-center mt-4">
-                    {testimonials.map((_, i) => (
-                        <button
-                            key={i}
-                            onClick={() => goToSlide(i)}
-                            className={`w-2 h-2 rounded-full mx-1 transition-colors ${i === currentIndex ? "bg-blue-400 w-4" : "bg-blue-400"
-                                }`}
-                            aria-label={`Go to slide ${i + 1}`}
-                        />
-                    ))}
-                </div>
+             <div className="flex sm:hidden justify-center mt-4">
+  {testimonials.map((_, i) => (
+    <span
+      key={i}
+      aria-label={`Slide ${i + 1}`}
+      className={`w-3 h-3 mr-2 rounded-full transition-all ${
+        i === currentIndex
+          ? "bg-blue-500" // filled circle
+          : "border-2 border-white" // outlined circle
+      }`}
+    ></span>
+  ))}
+</div>
+
+
             </div>
         </div>
     );
