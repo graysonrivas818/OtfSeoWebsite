@@ -64,7 +64,7 @@ export default function MarketingLanding() {
               <div className="relative z-20 mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl">
                 <div className="rounded-3xl p-1">
                   <img
-                    src={rightpic}
+                    src="/src/assets/Group 1686555164.png"
                     alt="Mobile Dashboard"
                     className="w-full h-auto rounded-3xl"
                   />
