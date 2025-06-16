@@ -2,6 +2,10 @@ import React from 'react';
 
 import backgroundImage from "../assets/person-component_bg.png";
 import whowearemobile from '../assets/who_we_are_mobile.png';
+import person1 from "../assets/person1.png";
+import person2 from "../assets/person2.jpeg";
+import person1Bg from "../assets/person1_bg.png";
+import person2Bg from "../assets/person2_bg.png";
 
 function useMobile(){
   const [isMobile, setIsMobile] = React.useState(false);
@@ -18,7 +22,7 @@ function useMobile(){
 const WhoWeAre = () => {
     const teamMembers = [
         {
-            image: "/src/assets/person1.png",
+            image: person1,
             name: "Sam Watts",
             title: "Owner & CEO",
             achievements: [
@@ -29,7 +33,7 @@ const WhoWeAre = () => {
             ],
         },
         {
-            image: "/src/assets/person2.jpeg",
+            image: person2,
             name: "Mia Erif",
             title: "Web Developer & SEO Expert",
             achievements: [
@@ -68,7 +72,7 @@ const WhoWeAre = () => {
                         <div
                             key={index}
                             style={{
-                                backgroundImage: `url(${index === 0 ? "src/assets/person1_bg.png" : "src/assets/person2_bg.png"})`,
+                               backgroundImage: `url('${index === 0 ? person1Bg : person2Bg}')`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                             }}

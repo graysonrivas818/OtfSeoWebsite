@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom'
+import browsePlanBg from "../assets/Browse_plan_bg.png";
+import otfForPricing from "../assets/otf_for_pricing.png";
 
 const BrowsePlans = () => {
   const navigate = useNavigate()
@@ -50,7 +52,7 @@ const BrowsePlans = () => {
   return (
     <div
       className="w-full bg-cover bg-center bg-no-repeat py-8 lg:py-16 relative "
-      style={{ backgroundImage: `url('/src/assets/Browse_plan_bg.png')`, backgroundSize: "100% 100%", }}
+      style={{  backgroundImage: `url('${browsePlanBg}')`, backgroundSize: "100% 100%", }}
     >
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 ">
@@ -158,7 +160,7 @@ const BrowsePlans = () => {
                             <div className="absolute bottom-4 right-4">
                                 <div className="p-2">
                                     <img
-                                        src="src/assets/otf_for_pricing.png"
+                                        src={otfForPricing}
                                         alt="OTF Logo"
                                         className="w-15 h-15 object-contain"
                                     />

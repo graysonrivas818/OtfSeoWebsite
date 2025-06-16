@@ -1,5 +1,7 @@
 import backgroundImage from "../assets/enterprise_bg.png";
 import mobileImage from '../assets/enterprise_center_mobile.png';
+import enterpriseCenter from "../assets/enterprise_center.png";
+
 import { useNavigate } from 'react-router-dom'
 
 
@@ -27,14 +29,14 @@ const Enterprise = () => {
 
                     {/* Laptop version - visible from 1024px (lg) up to 1279px (before xl) */}
                     <img
-                        src="/src/assets/enterprise_center.png"
+                        src={enterpriseCenter}
                         alt="Enterprise Laptop"
                         className="hidden lg:block xl:hidden w-[80%] h-auto object-contain"
                     />
 
                     {/* Desktop version - visible from 1280px and above */}
                     <img
-                        src="/src/assets/enterprise_center.png"
+                        src={enterpriseCenter}
                         alt="Enterprise"
                         className="hidden xl:block max-h-[80vh] max-w-[65%] object-contain"
                     />

@@ -1,4 +1,10 @@
 import React from 'react';
+import otfLogo from "../assets/otf_footer logo.png";
+import Meta from "../assets/Meta.png";
+import Google from "../assets/google.png";
+import LinkedIn from "../assets/linkedin.png";
+import Instagram from "../assets/instagram.png";
+
 import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
 
@@ -14,7 +20,7 @@ const Footer = () => {
                         {/* Left Section - Logo and Tagline */}
                         <div className="col-start-1 col-end-6">
                             <div className="mb-6">
-                                <img src="/src/assets/otf_footer logo.png" alt="OTF Marketing" className="h-20 mb-1" />
+                                <img src={otfLogo} alt="OTF Marketing" className="h-20 mb-1" />
                                 <h2 className="text-xl font-normal font-montserrat leading-relaxed">
                                     Streamline Your Marketing<br />
                                     and Maximize Your Growth
@@ -86,11 +92,11 @@ const Footer = () => {
 
                         {/* Center - Partner Logos in a row */}
                         <div className="flex flex-row items-center justify-center gap-8 flex-nowrap ml-10">
-                            <img src="/src/assets/Meta.png" alt="Meta" className="h-29" />
+                            <img src={Meta} alt="Meta" className="h-29" />
                             {/* <img src="/src/assets/google_guaranteed.png" alt="Google Guaranteed" className="h-14    " /> */}
-                            <img src="/src/assets/google.png" alt="Google Partner" className="h-38" />
-                            <img src="/src/assets/linkedin.png" alt="LinkedIn" className="h-8" />
-                            <img src="/src/assets/instagram.png" alt="Instagram" className="h-8" />
+                            <img src={Google} alt="Google Partner" className="h-38" />
+                            <img src={LinkedIn} alt="LinkedIn" className="h-8" />
+                            <img src={Instagram} alt="Instagram" className="h-8" />
                         </div>
 
                     </div>
@@ -112,7 +118,7 @@ const Footer = () => {
                     {/* Logo and Tagline */}
                     <div className="mb-8">
                         <img
-                            src="/src/assets/otf_footer logo.png"
+                            src={otfLogo}
                             alt="OTF Marketing"
                             className="h-17 mb-4"
                         />
@@ -164,16 +170,16 @@ className="block text-[15px] font-montserrat leading-3"  rel="noreferrer"
                     {/* Partner Logos */}
                     <div className="">
                         <div className="flex justify-between items-center mx-1  ">
-                            <img src="/src/assets/Meta.png" alt="Meta" className="h-20" />
+                            <img src={Meta} alt="Meta" className="h-20" />
                             {/* <img src="/src/assets/google_guaranteed.png" alt="Google Guaranteed" className="h-10" /> */}
-                            <img src="/src/assets/google.png" alt="Google Partner" className="h-27" />
+                            <img src={Google} alt="Google Partner" className="h-27" />
                         </div>
                     </div>
 
                     <div className="mb-8">
                         <div className="flex justify-between items-center mx-3">
-                            <img src="/src/assets/linkedin.png" alt="LinkedIn" className="h-7" />
-                            <img src="/src/assets/instagram.png" alt="Instagram" className="h-7" />
+                            <img src={LinkedIn} alt="LinkedIn" className="h-7" />
+                            <img src={Instagram} alt="Instagram" className="h-7" />
                         </div>
                     </div>
                     <div className="relative max-w-4xl mx-auto mt-2">
