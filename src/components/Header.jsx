@@ -2,7 +2,12 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { useNavigate, useLocation } from "react-router-dom"
-
+import BirdlineIcon from "../assets/Birdline-Icon3.png.png";
+import Meta from "../assets/Meta.png";
+import Google from "../assets/google.png";
+import LinkedIn from "../assets/linkedin.png";
+import Instagram from "../assets/instagram.png";
+import GoogleGuaranteed from "../assets/instagram.png";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
@@ -67,7 +72,7 @@ export default function Header() {
           {/* Logo - clickable to go home */}
           <div className="flex items-center cursor-pointer" onClick={goToHome}>
             <img
-              src="/src/assets/Birdline-Icon3.png.png"
+               src={BirdlineIcon}
               alt="OTF Logo"
               width="60"
               height="40"
@@ -110,7 +115,7 @@ export default function Header() {
             {/* Header with close button */}
             <div className="flex items-center justify-between p-4">
               <img 
-                src="/src/assets/Birdline-Icon3.png.png" 
+                src={BirdlineIcon}
                 alt="OTF Logo" 
                 className="h-8 w-auto pl-4 cursor-pointer" 
                 onClick={goToHome}
@@ -165,15 +170,15 @@ export default function Header() {
                 {/* Social Media Icons */}
                 <div className="mb-4">
                   <div className="flex justify-between items-center mx-5">
-                    <img src="/src/assets/linkedin.png" alt="LinkedIn" className="h-8" />
-                    <img src="/src/assets/instagram.png" alt="Instagram" className="h-6" />
+                    <img src={LinkedIn} alt="LinkedIn" className="h-8" />
+                    <img  src={Instagram} alt="Instagram" className="h-6" />
                   </div>
                 </div>
 
                 <div className="flex justify-center items-center gap-6">
-                  <img src="/src/assets/Meta.png" alt="Meta Partner" className="h-16" />
-                  <img src="/src/assets/google_guaranteed.png" alt="Google Guaranteed" className="h-11" />
-                  <img src="/src/assets/google.png" alt="Google Partner" className="h-16" />
+                  <img src={Meta} alt="Meta Partner" className="h-16" />
+                  <img src={GoogleGuaranteed} alt="Google Guaranteed" className="h-11" />
+                  <img src={Google} alt="Google Partner" className="h-16" />
                 </div>
               </div>
             </div>
