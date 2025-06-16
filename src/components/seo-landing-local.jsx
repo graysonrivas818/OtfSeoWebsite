@@ -11,12 +11,9 @@ export default function LocalSEOLanding() {
 
   return (
     <section
-      className="w-full bg-cover bg-center bg-no-repeat py-8 lg:py-16 relative "
+      className="w-full bg-cover bg-center bg-no-repeat  relative "
       style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "100% 100%", }}
     >
-
-
-
       <div className="w-full h-full">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:py-8 h-full flex items-center">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center w-full">

@@ -47,7 +47,7 @@ export default function MissionToRankOne() {
           <img
             src={contentImage}
             alt="Mission to Rank #1"
-            className="inline-block w-full max-w-[550px] h-auto"
+            className="inline-block w-full max-w-[500px] h-auto"
           />
         </div>
 
