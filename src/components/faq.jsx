@@ -1,8 +1,28 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import FAQbg from '../assets/FAQ_bg.png';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+ useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        // Desktop: open first FAQ by default
+        setActiveIndex(0);
+      } else {
+        // Mobile: close all FAQs
+        setActiveIndex(null);
+      }
+    };
+
+    // Set initial state
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const faqs = [
     {
@@ -48,7 +68,7 @@ const FAQ = () => {
       className="w-full bg-cover bg-center bg-no-repeat py-8 lg:py-24 relative"
       style={{ backgroundImage: `url(${FAQbg})`, backgroundSize: "100% 100%" }}
     >
-      <div className="relative z-10 w-full max-w-[1280px] px-4 sm:px-7 mx-auto">
+        <div className="relative z-10 w-full max-w-[1280px] px-4 sm:px-7 mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold font-montserrat mb-6">
@@ -64,38 +84,38 @@ const FAQ = () => {
               className={`bg-white/10 backdrop-blur-sm rounded-xl overflow-hidden w-full transition-all duration-300 ${activeIndex === index && window.innerWidth >= 768 ? 'border-2 border-white' : 'border-2 border-transparent'
                 } min-h-[80px] sm:min-h-auto flex flex-col justify-center`}
             >
-             <button
-  className={`w-full flex justify-between items-center text-left transition-all duration-300 ${activeIndex === index ? 'p-6' : 'p-4 md:p-6'}`}
-  onClick={() => toggleFAQ(index)}
->
-  <h3 className="text-white text-lg md:text-xl font-medium font-montserrat">
-    {faq.question}
-  </h3>
-  <svg
-    className={`w-6 h-6 text-white transform transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M19 9l-7 7-7-7"
-    />
-  </svg>
-</button>
+              <button
+                className={`w-full flex justify-between items-center text-left transition-all duration-300 ${activeIndex === index ? 'p-6' : 'p-4 md:p-6'}`}
+                onClick={() => toggleFAQ(index)}
+              >
+                <h3 className="text-white text-lg md:text-xl font-medium font-montserrat">
+                  {faq.question}
+                </h3>
+                <svg
+                  className={`w-6 h-6 text-white transform transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
 
               <div
-  className={`px-6 pb-6 transition-all duration-300 ${activeIndex === index ? 'block' : 'hidden'}`}
->
-  <p className="text-white/80 font-thin font-montserrat leading-relaxed">
-    {faq.answer}
-  </p>
-</div>
-
+                className={`px-6 pb-6 transition-all duration-300 ${activeIndex === index ? 'block' : 'hidden'}`}
+              >
+                <p className="text-white/80 font-thin font-montserrat leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
             </div>
           ))}
+
         </div>
       </div>
     </div>
