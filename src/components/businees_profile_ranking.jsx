@@ -105,7 +105,7 @@ export default function BusinessProfileRanking() {
           {/* Right Content */}
           <div className="order-2 lg:order-2 flex justify-center">
             <div className="rounded-2xl">
-              <img src={rankingImage} alt="Google My Business profile ranking improvement" className="w-full max-w-[550px] h-auto" />
+              <img src={rankingImage} alt="Google My Business profile ranking improvement" className="w-full max-w-[500px] h-auto" />
             </div>
           </div>
         </div>
