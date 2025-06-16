@@ -1,6 +1,8 @@
 
 import { Check } from "lucide-react";
 import backgroundImage from "../assets/local_search.png";
+import dashboardImage2 from "../assets/Frame 1686555124.png";
+
 import { useNavigate } from 'react-router-dom'
 
 export default function LocalSEOLanding() {
@@ -125,7 +127,7 @@ export default function LocalSEOLanding() {
                 <div className="relative mt-2">
                   <div className="rounded-2xl p-2">
                     <img
-                      src="/src/assets/Frame 1686555124.png"
+                      src={dashboardImage2}
                       alt="Analytics Dashboard showing growth metrics"
                       className="w-full sm:ml-10 h-auto rounded-xl mx-auto sm:mx-0"
                     />

@@ -1,6 +1,6 @@
 import React from "react";
 import backgroundImage from "../assets/Header.png";
-import dashboardImage from "../assets/Group 1686555164.png";
+import dashboardImage1 from "../assets/Group 1686555164.png";
 import logo1 from "../assets/image 15.png";
 import logo2 from "../assets/qt=q_95 1.png";
 import { useNavigate } from 'react-router-dom'
@@ -64,7 +64,7 @@ export default function MarketingLanding() {
               <div className="relative z-20 mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-2xl">
                 <div className="rounded-3xl p-1">
                   <img
-                    src={dashboardImage}
+                    src={dashboardImage1}
                     alt="Mobile Dashboard"
                     className="w-full h-auto rounded-3xl"
                   />
