@@ -1,5 +1,7 @@
 import backgroundImage from "../assets/iPhone_16_bg.png";
 import phoneImage from "../assets/iPhone_16_Pro.png";
+import arrowIcon from "../assets/circle-arrow-right-01.png";
+
 import { useNavigate } from 'react-router-dom'
 
 export default function MapPackHero() {
@@ -31,7 +33,7 @@ export default function MapPackHero() {
             <button onClick={() => navigate('/contact')} className="bg-[#0063FF] cursor-pointer sm:w-55 h-10 sm:h-17 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-[25px] font-semibold font-montserrat text-xl sm:text-xl lg:text-xl duration-200 inline-flex justify-center items-center  gap-2">
             Get Started
             <img
-              src="/src/assets/circle-arrow-right-01.png"
+              src={arrowIcon}
               alt="arrow"
               className="w-5 h-5"
             />

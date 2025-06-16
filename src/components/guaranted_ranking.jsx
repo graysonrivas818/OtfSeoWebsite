@@ -2,6 +2,7 @@ import { Check } from "lucide-react";
 import backgroundImage from "../assets/map_guaranted.png";
 import searchImage from "../assets/Group 1686555130.png";
 import { useNavigate } from 'react-router-dom'
+import arrowIcon from "../assets/circle-arrow-right-01.png";
 
 
 export default function LocalSEOLanding() {
@@ -90,7 +91,7 @@ We help you reach the top of Google Maps with complete SEO solutions. Optimizing
                 <div className="flex justify-center sm:justify-start">
                   <button onClick={() => navigate('/contact')} className="bg-[#0063FF] cursor-pointer sm:w-4- h-10 sm:h-17 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-[25px] font-semibold font-montserrat text-xl sm:text-xl lg:text-xl duration-200 flex items-center justify-center gap-2">
                     Rank #1
-                    <img src="/src/assets/circle-arrow-right-01.png" alt="arrow" className="w-5 h-5" />
+                    <img src={arrowIcon}alt="arrow" className="w-5 h-5" />
                   </button>
                 </div>
 

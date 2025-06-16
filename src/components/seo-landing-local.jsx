@@ -2,6 +2,7 @@
 import { Check } from "lucide-react";
 import backgroundImage from "../assets/local_search.png";
 import dashboardImage2 from "../assets/Frame 1686555124.png";
+import arrowIcon from "../assets/circle-arrow-right-01.png";
 
 import { useNavigate } from 'react-router-dom'
 
@@ -112,7 +113,7 @@ export default function LocalSEOLanding() {
                 <button onClick={() => navigate('/contact')} className="bg-[#0063FF]  cursor-pointer sm:w-55 h-10 sm:h-17  font-semibold font-montserrat text-white px-8 py-4 rounded-[25px] text-xl sm:text-xl lg:text-xl inline-flex justify-center items-center gap-2">
                   Get Started
                   <img
-                    src="/src/assets/circle-arrow-right-01.png"
+                    src={arrowIcon}
                     alt="arrow"
                     className="w-4 h-4"
                   />

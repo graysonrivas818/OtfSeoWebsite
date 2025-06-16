@@ -4,6 +4,8 @@ import contentImage from "../assets/promotional_banner_bg.png";
 import centerBlueImage from "../assets/center_blue_images.png";
 import centerBlueImageMobile from "../assets/center_blue_images_mobile1.png";
 // import centerBlueImageMobile from "../assets/center_blue_images_mobile.png";
+import arrowIcon from "../assets/circle-arrow-right-01.png";
+
 import { useNavigate } from 'react-router-dom'
 
 // Define useMobile here if you don't have it already
@@ -65,7 +67,7 @@ export default function PromotionalBanner() {
                                 </p>
                                 <button onClick={() => navigate('/contact')} className="bg-[#0a2952] cursor-pointer text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-[30px] font-semibold font-montserrat text-sm md:text-base lg:text-lg flex items-center gap-2">
                                     Get Started
-                                    <img src="/src/assets/circle-arrow-right-01.png" alt="arrow" className="w-4 h-4 md:w-5 md:h-5" />
+                                    <img src={arrowIcon} alt="arrow" className="w-4 h-4 md:w-5 md:h-5" />
                                 </button>
 
                             </>
@@ -86,7 +88,7 @@ export default function PromotionalBanner() {
                                 <button onClick={() => navigate('/contact')} className="bg-[#0a2952] m-3 cursor-pointer text-white px-8 py-4 sm:px-10 sm:py-5 md:px-12 md:py-6 lg:px-16 lg:py-8 rounded-full font-semibold font-montserrat text-base sm:text-xl md:text-2xl flex items-center gap-4 mx-auto">
                                     Get Started
                                     <img
-                                        src="/src/assets/circle-arrow-right-01.png"
+                                         src={arrowIcon}
                                         alt="arrow"
                                         className="w-5 h-5 sm:w-5 sm:h-5 md:w-7 md:h-7 lg:w-8 lg:h-8"
                                     />

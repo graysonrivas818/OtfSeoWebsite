@@ -6,6 +6,8 @@ import logo2 from '../assets/testinomial_logo2.png';
 import logo3 from '../assets/testinomial_logo3.png';
 import backgroundImage from "../assets/testinomial_bg.png";
 import testinomial_bg_mobile from '../assets/testinomial_bg_mobile.png';
+import cardsBackground from "../assets/cards_bg.png";
+
 
 function useMobile(){
   const [isMobile, setIsMobile] = React.useState(false);
@@ -113,7 +115,7 @@ const Testimonials = () => {
                             key={index}
                             className="backdrop-blur-sm w-full h-[550px] p-13 flex flex-col rounded-3xl"
                             style={{
-                                backgroundImage: `url('src/assets/cards_bg.png')`,
+                                backgroundImage: `url('${cardsBackground}')`,
                                 backgroundSize: "100%",
                                 backgroundPosition: "center"
                             }}
@@ -171,7 +173,7 @@ const Testimonials = () => {
                             key={index}
                             className="flex-shrink-0 w-[300px] snap-start max-w-md p-10 max-h-[550px] mx-auto flex flex-col rounded-3xl"
                             style={{
-                                backgroundImage: `url('src/assets/cards_bg.png')`,
+                                backgroundImage: `url('${cardsBackground}')`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                             }}

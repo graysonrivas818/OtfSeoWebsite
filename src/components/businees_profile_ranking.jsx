@@ -1,5 +1,7 @@
 import backgroundImage from "../assets/businees_profile_ranking.png";
 import rankingImage from "../assets/businees_profile_ranking_picture.png";
+import arrowIcon from "../assets/circle-arrow-right-01.png";
+
 import { useNavigate } from 'react-router-dom'
 
 export default function BusinessProfileRanking() {
@@ -95,7 +97,7 @@ export default function BusinessProfileRanking() {
             <div className="flex justify-center lg:justify-start">
               <button onClick={() => navigate('/contact')} className="bg-[#0063FF] cursor-pointer text-white px-6 py-3 sm:px-8 sm:py-4 md:px-10 md:py-5 lg:px-12 lg:py-6 rounded-[30px] font-semibold font-montserrat text-sm sm:text-base md:text-xl flex items-center gap-3">
                 Get More Business
-                <img src="/src/assets/circle-arrow-right-01.png" alt="arrow" className="w-4 h-4" />
+                <img src={arrowIcon} alt="arrow" className="w-4 h-4" />
               </button>
             </div>
           </div>

@@ -1,8 +1,8 @@
-
-
 import React from "react";
 import bgImage from "../assets/mission_is_rank_1_bg.png";
 import contentImage from "../assets/mission_is_rank_1_content.png";
+import arrowIcon from "../assets/circle-arrow-right-01.png";
+
 import { useNavigate } from 'react-router-dom'
 
 export default function MissionToRankOne() {
@@ -36,7 +36,7 @@ export default function MissionToRankOne() {
           <div className="pt-4 flex justify-center lg:justify-end mb-10 sm:mb-0">
             <button onClick={() => navigate('/contact')} className="bg-[#0063FF] cursor-pointer sm:w-55 h-10 sm:h-17 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-[25px] font-semibold font-montserrat text-xl sm:text-xl lg:text-xl duration-200 flex items-center justify-center gap-2">
               Get Started
-              <img src="/src/assets/circle-arrow-right-01.png" alt="arrow" className="w-5 h-5" />
+              <img src={arrowIcon} alt="arrow" className="w-5 h-5" />
             </button>
           </div>
 
