@@ -158,7 +158,7 @@ export default function Header() {
 
                 <div className="flex justify-center">
                   <button
-                    className="w-[250px] bg-[#04193D] mt-10 cursor-pointer  text-white py-4 rounded-full font-bold font-montserrat text-xl border border-[#0E49B0] hover:bg-[#0E49B0] transition-colors"
+                    className="w-[200px] bg-[#04193D] mt-10 cursor-pointer  text-white py-2.5 rounded-full font-bold font-montserrat text-lg border border-[#0E49B0] hover:bg-[#0E49B0] transition-colors"
                     onClick={goToContact}
                   >
                     Get Started
