@@ -153,9 +153,13 @@ export default function FullServiceSEO() {
                 <img
                   src={caseStudy.beforeImage}
                   alt={`${caseStudy.title} - Before SEO results`}
-                  className="w-full h-full"
+                  className="w-full h-full "
                   draggable={false}
                 />
+                 <div
+    className="absolute top-0 left-0 w-full h-full bg-gray-500"
+    style={{opacity:'0.2'}}
+  ></div>
                 <div className="absolute top-1 right-1 px-2 py-1">
                   <div className="flex items-center gap-1">
                     <img
@@ -336,6 +340,10 @@ export default function FullServiceSEO() {
                         e.target.onerror = null;
                       }}
                     />
+                        <div
+    className="absolute top-0 left-0 w-full h-full bg-gray-500"
+    style={{opacity:'0.2'}}
+  ></div>
                     <div className="absolute top-3 right-3 px-2 py-1 ">
                       <div className="flex items-center gap-1">
                         <img

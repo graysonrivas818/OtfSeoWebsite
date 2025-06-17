@@ -7,7 +7,7 @@ import Meta from "../assets/Meta.png";
 import Google from "../assets/google.png";
 import LinkedIn from "../assets/linkedin.png";
 import Instagram from "../assets/instagram.png";
-import GoogleGuaranteed from "../assets/instagram.png";
+import GoogleGuaranteed from "../assets/google_guaranteed.png";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
@@ -170,7 +170,7 @@ export default function Header() {
                 {/* Social Media Icons */}
                 <div className="mb-4">
                   <div className="flex justify-between items-center mx-5">
-                    <img src={LinkedIn} alt="LinkedIn" className="h-8" />
+                    <img src={LinkedIn} alt="LinkedIn" className="h-7" />
                     <img  src={Instagram} alt="Instagram" className="h-6" />
                   </div>
                 </div>

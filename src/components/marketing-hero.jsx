@@ -17,28 +17,60 @@ export default function MarketingLanding() {
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-8 items-center w-full">
             {/* Left Content - Text and CTA */}
             <div className="order-1 lg:order-1 text-white space-y-6  lg:pt-0">
-              <div className="space-y-3 lg:space-y-4">
+              {/* <div className="space-y-3 lg:space-y-4">
 
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-montserrat leading-tight text-center lg:text-left mt-10 sm:mt-20">
+                <h1 className="text-[30px] sm:text-4xl lg:text-5xl font-montserrat leading-12 text-center lg:text-left mt-10 sm:mt-20">
                   <span className="font-normal block sm:inline">MORE</span>
-                  <span className="font-bold"> RANKING.</span>
-                  <br /> {/* Only break on mobile */}
+                  <span className="font-extrabold"> RANKING.</span>
+                  <br /> 
                   <span className="font-normal">MORE </span>
-                  <span className="font-bold">CLICKS.</span>
-                  <br /> {/* Only break on mobile */}
+                  <span className="font-extrabold">CLICKS.</span>
+                  <br /> 
                   <span className="font-normal">MORE </span>
-                  <span className="font-bold">REVENUE.</span>
+                  <span className="font-extrabold">REVENUE.</span>
                 </h1>
                 <p className="text-[15px] sm:text-xl lg:text-xl m-7 text-white leading-relaxed  max-w-[310px] sm:max-w-lg mx-auto lg:mx-0 text-center lg:text-left font-normal font-montserrat">
                   OTF Marketing is the full service marketing company helps businesses dominate on search. Get your business seen by customers consistently and watch your business grow.                </p>
-              </div>
+              </div> */}
+<div className="space-y-3 lg:space-y-4">
+  {/* Heading for mobile */}
+  <h1 className="text-[40px] sm:hidden tracking-[-2px] font-montserrat leading-12 text-center mt-20 sm:mt-20">
+    <span className="font-normal block sm:inline">MORE</span>
+    <span className="font-extrabold"> RANKING.</span>
+    <br />
+    <span className="font-normal">MORE </span>
+    <span className="font-bold">CLICKS.</span>
+    <br />
+    <span className="font-normal">MORE </span>
+    <span className="font-extrabold">REVENUE.</span>
+  </h1>
+
+  {/* Heading for desktop */}
+  <h1 className="hidden sm:block text-[30px] sm:text-4xl lg:text-5xl font-montserrat leading-12 text-center lg:text-left mt-10 sm:mt-20">
+    <span className="font-normal block sm:inline">MORE</span>
+    <span className="font-bold"> RANKING.</span>
+    <br />
+    <span className="font-normal">MORE </span>
+    <span className="font-extrabold">CLICKS.</span>
+    <br />
+    <span className="font-normal">MORE </span>
+    <span className="font-bold">REVENUE.</span>
+  </h1>
+
+  {/* Paragraph stays the same for both */}
+  <p className="text-[16px] sm:text-xl lg:text-xl m-7 text-white/80 leading-relaxed max-w-[315px] sm:max-w-lg mx-auto lg:mx-0 text-center lg:text-left font-normal font-montserrat">
+    OTF Marketing is the full service marketing company helps businesses
+    dominate on search. Get your business seen by customers consistently and
+    watch your business grow.
+  </p>
+</div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-row sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-row sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
                 <button className="bg-[#0063FF] text-white px-6 py-2 sm:px-8 sm:py-3 sm:w-[180px] sm:h-[50px] lg:px-6 lg:py-3 lg:w-[170px] rounded-full font-bold font-montserrat text-sm sm:text-base w-[150px] h-[40px]">
                   Start Ranking
                 </button>
-                <button onClick={() => navigate('/contact')} className="cursor-pointer border-2 border-white/30 hover:border-white text-white px-6 py-2 sm:px-8 sm:py-3 sm:w-[180px] sm:h-[50px] lg:px-6 lg:py-3 lg:w-[170px] rounded-full font-bold font-montserrat text-sm sm:text-base w-[150px] h-[40px]">
+                <button onClick={() => navigate('/contact')} className="cursor-pointer border-2 border-white/20 hover:border-white text-white px-6 py-2 sm:px-8 sm:py-3 sm:w-[180px] sm:h-[50px] lg:px-6 lg:py-3 lg:w-[170px] rounded-full font-bold font-montserrat text-sm sm:text-base w-[150px] h-[40px]">
                   Get Started
                 </button>
               </div>
@@ -48,12 +80,12 @@ export default function MarketingLanding() {
                   <img
                     src={logo1}
                     alt="UJC Logo"
-                    className="h-12 sm:h-16 lg:h-20 w-auto"
+                    className="h-14 sm:h-16 lg:h-20 w-auto"
                   />
                   <img
                     src={logo2}
                     alt="Electric Logo"
-                    className="h-10 sm:h-12 lg:h-16 w-auto"
+                    className="h-12 sm:h-12 lg:h-16 w-auto"
                   />
                 </div>
               </div>

@@ -1,5 +1,5 @@
 .animate-marquee {
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
   display: flex;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -8,7 +8,7 @@
 
 @media (max-width: 640px) {
   .animate-marquee {
-    animation-duration: 30s; 
+    animation-duration: 40s; 
     gap: 2rem;
     min-width: 200%;
     flex-wrap: nowrap;

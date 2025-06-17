@@ -20,11 +20,11 @@ export default function LocalSEOLanding() {
           <div className="flex flex-col lg:grid  lg:grid-cols-2 gap-4 lg:gap-6 items-center w-full">
             {/* Right Content - Search Image (now on left) */}
             <div className="order-2 lg:order-1  relative w-full">
-              <div className="rounded-2xl p-2 -ml-4 lg:-ml-10">
+              <div className="rounded-2xl p-2 -ml-6 lg:-ml-12">
                 <img
                   src={searchImage}
                   alt="Google search results showing top rankings"
-                  className="w-full h-auto rounded-xl"
+      className="w-full max-w-[550px] h-auto rounded-xl mx-auto"
                 />
               </div>
             </div>
