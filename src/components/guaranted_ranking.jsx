@@ -74,7 +74,7 @@ export default function LocalSEOLanding() {
                 </h1>
 
 
-                <p className="text-white text-[17px] sm:text-lg w-full max-w-[320px] mx-auto text-center sm:text-center lg:text-left font-normal font-montserrat leading-relaxed block sm:hidden">
+                <p className="text-white text-[17px] sm:text-lg w-full max-w-full p-1 mx-auto text-center sm:text-center lg:text-left font-normal font-montserrat leading-relaxed block sm:hidden">
 We help you reach the top of Google Maps with complete SEO solutions. Optimizing everything from your content and keywords to technical performance and backlinks. Whether local or national, we drive long-term growth, higher rankings, and real results or your money back.                </p>
 
                 <p className="text-white text-base w-full sm:text-lg max-w-3xl text-center sm:text-center lg:text-left font-light font-montserrat leading-10 hidden sm:block">
