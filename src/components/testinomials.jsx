@@ -6,7 +6,8 @@ import logo2 from '../assets/testinomial_logo2.png';
 import logo3 from '../assets/testinomial_logo3.png';
 import backgroundImage from "../assets/testinomial_bg.png";
 import testinomial_bg_mobile from '../assets/testinomial_bg_mobile.png';
-import cardsBackground from "../assets/cards_bg.png";
+// import cardsBackground from "../assets/cards_bg.png";
+import cardsBackground from "../assets/cards_bg1.png";
 
 
 function useMobile(){
@@ -98,17 +99,20 @@ const Testimonials = () => {
 
 
                 {/* Testimonial Cards */}
-                <div className="hidden sm:grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div className="hidden sm:grid grid-cols-1 lg:grid-cols-3  gap-8 max-w-6xl mx-auto">
                     {testimonials.map((testimonial, index) => (
-                        <div
-                            key={index}
-                            className="backdrop-blur-sm w-full h-[550px] p-13 flex flex-col rounded-3xl"
-                            style={{
-                                backgroundImage: `url('${cardsBackground}')`,
-                                backgroundSize: "100%",
-                                backgroundPosition: "center"
-                            }}
-                        >
+                    <div
+    key={index}
+    className="backdrop-blur-sm w-full p-13 flex flex-col rounded-3xl"
+    style={{ 
+        backgroundImage: `url('${cardsBackground}')`,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height: "550px"
+    }}
+>
+
 
 
                             <div className="flex justify-center mb-4">
@@ -163,8 +167,9 @@ const Testimonials = () => {
                             className="flex-shrink-0 w-[300px] snap-start max-w-md p-10 max-h-[550px] mx-auto flex flex-col rounded-3xl"
                             style={{
                                 backgroundImage: `url('${cardsBackground}')`,
-                                backgroundSize: "cover",
-                                backgroundPosition: "center",
+                                  backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
                             }}
                         >
                             {/* Logo - Reduced height */}

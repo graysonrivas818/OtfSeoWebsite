@@ -33,7 +33,7 @@ export default function MissionToRankOne() {
           >
             At OTF, we don't just aim to compete — we're built to lead. Our mission is simple: help brands reach and stay at the top. Whether it's search rankings, product visibility, or brand authority, our goal is to drive you to #1 in your niche — and keep you there.
           </p>
-          <div className="pt-4 flex justify-center lg:justify-end mb-10 sm:mb-0">
+          <div className="pt-4 flex justify-center lg:justify-start  mb-10 sm:mb-0">
             <button onClick={() => navigate('/contact')} className="bg-[#0063FF] cursor-pointer sm:w-55 h-10 sm:h-17 text-white px-6 py-3 lg:px-8 lg:py-4 rounded-[25px] font-semibold font-montserrat text-xl sm:text-xl lg:text-xl duration-200 flex items-center justify-center gap-2">
               Get Started
               <img src={arrowIcon} alt="arrow" className="w-5 h-5" />
@@ -42,7 +42,6 @@ export default function MissionToRankOne() {
 
         </div>
 
-        {/* Image - Moves to bottom on mobile */}
         <div className="order-2 lg:order-1 text-center sm:text-left">
           <img
             src={contentImage}

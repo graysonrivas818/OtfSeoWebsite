@@ -97,8 +97,8 @@ const BrowsePlans = () => {
                   className={`
                                     w-full py-3  cursor-pointer px-6 rounded-lg font-semibold font-montserrat transition-all duration-300
                                     ${plan.featured
-                      ? "bg-[#1F345C] text-white "
-                      : "bg-blue-600 text-white "
+           ? "bg-[#1F345C] text-white hover:bg-gray-100 hover:text-[#1F345C]"
+: "bg-blue-600 text-white hover:bg-gray-100 hover:text-blue-600"
                     }
                                 `}
                 >

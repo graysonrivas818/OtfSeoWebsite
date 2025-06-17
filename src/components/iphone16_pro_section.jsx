@@ -1,6 +1,8 @@
-import backgroundImage from "../assets/iPhone_16_bg.png";
+// import backgroundImage from "../assets/iPhone_16_bg.png";
+import backgroundImage from "../assets/iPhone_16_bg1.png";
 import phoneImage from "../assets/iPhone_16_Pro.png";
 import arrowIcon from "../assets/circle-arrow-right-01.png";
+import BirdlineIcon from "../assets/Birdline-Icon3.png.png";
 
 import { useNavigate } from 'react-router-dom'
 
@@ -14,7 +16,11 @@ export default function MapPackHero() {
     >
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0  bg-opacity-80"></div>
-
+  <img
+    src={BirdlineIcon}
+    alt="Decoration"
+  className="absolute top-[580px] sm:top-[670px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[430px] lg:w-[800px] z-10 opacity-5"
+  />
       <div className="relative z-10 max-w-[1800px] mx-auto px-4 sm:px-6 ">
         {/* Header Content */}
         <div className="text-center">
