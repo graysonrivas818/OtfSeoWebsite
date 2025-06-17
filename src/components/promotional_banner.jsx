@@ -30,7 +30,7 @@ export default function PromotionalBanner() {
 
     return (
         <section
-            className="w-full bg-cover bg-center bg-no-repeat  py-8 lg:py-5  relative"
+            className="w-full bg-cover bg-center bg-no-repeat  py-8 lg:py-13  relative"
             style={{ backgroundImage: `url(${contentImage})`, backgroundSize: "100% 100%" }}
         >
             <div className="w-full h-full relative">

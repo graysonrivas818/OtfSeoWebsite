@@ -60,22 +60,22 @@ const Footer = () => {
                                 <HashLink smooth to="/#pricing" className="block text-[16px] font-semibold font-montserrat leading-5">
                                     Pricing
                                 </HashLink>
-<a
-  href="https://campaigns.otf.marketing/"
-  className="block text-[16px] font-semibold font-montserrat leading-5"
-  rel="noreferrer"
->
-  Advertising
-</a>
+                                <a
+                                    href="https://campaigns.otf.marketing/"
+                                    className="block text-[16px] font-semibold font-montserrat leading-5"
+                                    rel="noreferrer"
+                                >
+                                    Advertising
+                                </a>
 
                                 {/* <a
                                     href="#"
                                     className="block text-[16px ] font-semibold font-montserrat leading-5">
                                     Contact Us
                                 </a> */}
-                                 <Link to="/contact" className="block text-[16px ] font-semibold font-montserrat leading-5">
-                                Contact Us
-                            </Link>
+                                <Link to="/contact" className="block text-[16px ] font-semibold font-montserrat leading-5">
+                                    Contact Us
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Footer = () => {
                             alt="OTF Marketing"
                             className="h-17 mb-4"
                         />
-                        <h2 className="text-md font-normal font-montserrat ">
+                        <h2 className="text-md font-normal text-white/30 font-montserrat ">
                             Streamline Your Marketing and<br />
                             Maximize Your Growth
                         </h2>
@@ -144,12 +144,12 @@ const Footer = () => {
                             {/* <HashLink smooth to="/#about" className="block text-[15px] font-montserrat leading-3">
                                 Advertising
                             </HashLink> */}
-<a
-  href="https://campaigns.otf.marketing/"
-className="block text-[15px] font-montserrat leading-3"  rel="noreferrer"
->
-  Advertising
-</a>
+                            <a
+                                href="https://campaigns.otf.marketing/"
+                                className="block text-[15px] font-montserrat leading-3" rel="noreferrer"
+                            >
+                                Advertising
+                            </a>
 
                             <Link to="/contact" className="block text-[15px] font-montserrat leading-3">
                                 Contact Us
