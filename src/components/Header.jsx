@@ -178,7 +178,7 @@ export default function Header() {
 
                 <div className="flex justify-center items-center gap-6">
                   <img src={Meta} alt="Meta Partner" className="h-16" />
-                  <img src={GoogleGuaranteed} alt="Google Guaranteed" className="h-11" />
+                  <img src={GoogleGuaranteed} alt="Google Guaranteed" className="h-10" />
                   <img src={Google} alt="Google Partner" className="h-16" />
                 </div>
               </div>
