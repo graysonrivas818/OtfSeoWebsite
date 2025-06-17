@@ -9,7 +9,7 @@ const BrowsePlans = () => {
     {
       title: "Rank #1 - Website",
       subtitle: "For Businesses Looking to Rank on Search",
-      price: "$2,500",
+      price: "$1,500",
       period: "/mo",
       priceNote: "*Estimated Price Based Average Client Rate",
       featured: false,
@@ -23,7 +23,7 @@ const BrowsePlans = () => {
     {
       title: "Rank #1 - Website + GMB",
       subtitle: "For Businesses Looking to Dominate Search",
-      price: "$3,500",
+      price: "$2,500",
       period: "/mo",
       priceNote: "*Estimated Price Based Average Client Rate",
       featured: true,
@@ -36,7 +36,7 @@ const BrowsePlans = () => {
     {
       title: "Rank #1 - Website + GMB",
       subtitle: "For Businesses Looking to Close More Fast",
-      price: "$7,500",
+      price: "$4,500",
       period: "/mo",
       priceNote: "*Estimated Price Based Average Client Rate",
       featured: false,

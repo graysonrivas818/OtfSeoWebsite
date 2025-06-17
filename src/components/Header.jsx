@@ -26,7 +26,7 @@ export default function Header() {
       setTimeout(() => {
         const element = document.getElementById(sectionId)
         if (element) {
-          element.scrollIntoView({ 
+          element.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
           })
@@ -36,7 +36,7 @@ export default function Header() {
       // We're already on home page, just scroll
       const element = document.getElementById(sectionId)
       if (element) {
-        element.scrollIntoView({ 
+        element.scrollIntoView({
           behavior: 'smooth',
           block: 'start'
         })
@@ -72,11 +72,11 @@ export default function Header() {
           {/* Logo - clickable to go home */}
           <div className="flex items-center cursor-pointer" onClick={goToHome}>
             <img
-               src={BirdlineIcon}
+              src={BirdlineIcon}
               alt="OTF Logo"
-              width="60"
-              height="40"
-              className="h-8 w-auto pl-4 sm:pl-10"
+              // width="60"
+              // height="40"
+              className="h-10 w-auto pl-4 sm:pl-10"
             />
           </div>
 
@@ -91,7 +91,7 @@ export default function Header() {
                 {item.name}
               </button>
             ))}
-            <button 
+            <button
               onClick={goToContact}
               className="bg-[#0063FF] cursor-pointer text-white px-6 py-2 rounded-full font-bold font-montserrat transition-all duration-200 hover:bg-[#0052CC]"
             >
@@ -113,11 +113,11 @@ export default function Header() {
         {isMenuOpen && (
           <div className="md:hidden fixed inset-0 bg-[#020816] z-50 flex flex-col">
             {/* Header with close button */}
-            <div className="flex items-center justify-between p-4">
-              <img 
+            <div className="flex items-center justify-between pb-2 pt-4 pr-2 pl-2">
+              <img
                 src={BirdlineIcon}
-                alt="OTF Logo" 
-                className="h-8 w-auto pl-4 cursor-pointer" 
+                alt="OTF Logo"
+                className="h-10 w-auto pl-4 cursor-pointer"
                 onClick={goToHome}
               />
               <button
@@ -141,23 +141,24 @@ export default function Header() {
                     Guaranteed or We Work For Free!
                   </p>
                 </div>
-                
+
                 {/* Navigation Items */}
                 <nav className="space-y-3">
                   {navItems.map((item) => (
                     <button
                       key={item.name}
                       onClick={item.type === "scroll" ? () => scrollToSection(item.sectionId) : item.action}
-                      className="block w-full text-left text-xl font-medium font-montserrat text-white border-t-2 border-white/20 pt-4 hover:text-gray-300 transition-colors"
+                      className="block w-full text-left text-xl font-medium font-montserrat text-white border-t-2 border-white/20 pt-4 pl-5 hover:text-gray-300 transition-colors"
+                      
                     >
                       {item.name}
                     </button>
                   ))}
                 </nav>
 
-                <div>
-              <button
-                    className="w-full bg-[#04193D] mt-10 cursor-pointer  text-white py-4 rounded-full font-bold font-montserrat text-xl border border-[#0E49B0] hover:bg-[#0E49B0] transition-colors"
+                <div className="flex justify-center">
+                  <button
+                    className="w-[250px] bg-[#04193D] mt-10 cursor-pointer  text-white py-4 rounded-full font-bold font-montserrat text-xl border border-[#0E49B0] hover:bg-[#0E49B0] transition-colors"
                     onClick={goToContact}
                   >
                     Get Started
@@ -171,7 +172,7 @@ export default function Header() {
                 <div className="mb-4">
                   <div className="flex justify-between items-center mx-5">
                     <img src={LinkedIn} alt="LinkedIn" className="h-7" />
-                    <img  src={Instagram} alt="Instagram" className="h-6" />
+                    <img src={Instagram} alt="Instagram" className="h-6" />
                   </div>
                 </div>
 
