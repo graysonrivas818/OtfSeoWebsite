@@ -56,6 +56,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header.jsx'
 import HomePage from '../src/pages/HomePage.jsx'
 import ContactPage from '../src/pages/ContactPage.jsx'
+import TosPage from '../src/pages/tos.jsx'
+import PrivacyPolicy from './pages/privacypolicy.jsx'
+
 
 function App() {
   return (
@@ -64,6 +67,8 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/tos" element={<TosPage />} />
+        <Route path="/privact-policy" element={<PrivacyPolicy />} />
       </Routes>
     </Router>
   )
