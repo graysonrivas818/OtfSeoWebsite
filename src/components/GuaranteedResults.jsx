@@ -29,7 +29,7 @@ export default function GuaranteedResultsSEO() {
 
 
 
-            <div className="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-6">
+            <div className="relative z-10 max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-6">
                 
                 {/* Services Feature List */}
 
@@ -112,9 +112,9 @@ export default function GuaranteedResultsSEO() {
 
                 {/* Results Grid - Custom Layout */}
                 <div className="w-full hidden sm:block ">
-                    <div className="grid grid-cols-12 gap-4 mx-20 lg:gap-6">
+                    <div className="grid grid-cols-12  mx-20 lg:gap-3">
                         {/* Left Column - 2 stacked cards */}
-                        <div className="col-span-12 md:col-span-6 lg:col-span-3 space-y-4 lg:space-y-6">
+                        <div className="col-span-12 md:col-span-6 lg:col-span-3 space-y-4 lg:space-y-3">
                             {/* Conversion Rate Card */}
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                                 <img
@@ -148,7 +148,7 @@ export default function GuaranteedResultsSEO() {
                         </div>
 
                         {/* Right Column - 3 cards */}
-                        <div className="col-span-12 lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6">
+                        <div className="col-span-12 lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-3">
                             {/* Traffic Increase Map */}
                             <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                                 <img
