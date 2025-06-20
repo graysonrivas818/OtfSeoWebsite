@@ -52,20 +52,20 @@ export default function PromotionalBanner() {
 
                     </div>
                     {/* Content */}
-                    <div className="relative z-10 flex flex-col items-center justify-center text-center text-white py-16 px-6 md:py-24">
+                    <div className="relative z-10 flex flex-col items-center text-white justify-center text-center py-16 px-6 md:py-24">
                         {/* Desktop version */}
                         {!isMobile && (
                             <>
-                                <h2 className="text-4xl md:text-5xl font-bold mb-4 font-montserrat">
-                                    <span className="text-black">Rank #1</span> Guaranteed
+                                <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 font-montserrat">
+                                    <span className="text-[#061D49]">Rank #1</span> Guaranteed
                                 </h2>
-                                <h2 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat">
+                                <h2 className="text-4xl md:text-5xl  text-white font-extrabold mb-6 font-montserrat">
                                     Or We Work For Free!
                                 </h2>
-                                <p className="max-w-2xl md:max-w-3xl text-base md:text-lg mb-10 font-montserrat">
+                                <p className="max-w-2xl md:max-w-[700px]  text-white/70 text-base md:text-lg mb-10  font-montserrat">
                                     We back our plans with a 60 day money back guarantee if they do not see measurable results and we also guarantee #1 rankings or we will work for free until you are ranked #1.
                                 </p>
-                                <button onClick={() => navigate('/contact')} className="bg-[#0a2952] cursor-pointer text-white px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-[30px] font-semibold font-montserrat text-sm md:text-base lg:text-lg flex items-center gap-2">
+                                <button onClick={() => navigate('/contact')} className="bg-[#0a2952] cursor-pointer text-white px-4 py-2 md:px-6 md:py-3 lg:px-9 lg:py-4 rounded-[25px] font-semibold font-montserrat text-sm md:text-base lg:text-lg flex items-center gap-2">
                                     Get Started
                                     <img src={arrowIcon} alt="arrow" className="w-4 h-4 md:w-5 md:h-5" />
                                 </button>
@@ -76,23 +76,32 @@ export default function PromotionalBanner() {
 
                         {isMobile && (
                             <>
-                                <h2 className="text-xl font-bold font-montserrat">
+                                <h2 className="text-[21px] font-black font-montserrat">
                                     Rank #1 Guaranteed
                                 </h2>
-                                <h2 className="text-xl font-bold mb-4 font-montserrat">
+                                <h2 className="text-[21px] font-black mb-4 font-montserrat">
                                     Or We Work For Free!
                                 </h2>
-                                <p className="text-[15px] mb-4 max-w-[280px] font-montserrat">
+                                <p className="text-[14px] text-white/80 mb-4 max-w-[290px] font-montserrat">
                                     We back our plans with a 60 day money back guarantee if they do not see measurable results and we also guarantee #1 rankings or we will work for free until you are ranked #1.
                                 </p>
-                                <button onClick={() => navigate('/contact')} className="bg-[#0a2952] m-3 cursor-pointer text-white px-8 py-4 sm:px-10 sm:py-5 md:px-12 md:py-6 lg:px-16 lg:py-8 rounded-full font-semibold font-montserrat text-base sm:text-xl md:text-2xl flex items-center gap-4 mx-auto">
-                                    Get Started
-                                    <img
-                                         src={arrowIcon}
-                                        alt="arrow"
-                                        className="w-5 h-5 sm:w-5 sm:h-5 md:w-7 md:h-7 lg:w-8 lg:h-8"
-                                    />
-                                </button>
+                               <button 
+  onClick={() => navigate('/contact')} 
+  className="
+    bg-[#002B70] m-3 cursor-pointer text-white 
+    px-10 py-5 sm:px-12 sm:py-6 md:px-14 md:py-7 lg:px-20 lg:py-9 
+    rounded-full font-semibold font-montserrat 
+    text-lg sm:text-2xl md:text-3xl lg:text-4xl
+    flex items-center gap-4 mx-auto
+  "
+>
+  Get Started
+  <img
+    src={arrowIcon}
+    alt="arrow"
+    className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10"
+  />
+</button>
                             </>
                         )}
 

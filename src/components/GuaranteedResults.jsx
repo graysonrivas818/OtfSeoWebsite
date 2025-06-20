@@ -120,7 +120,7 @@ export default function GuaranteedResultsSEO() {
                                 <img
                                     src={resultImage1}
                                     alt="Conversion rate analytics showing 340 conversions with 27.14% increase"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
                                 />
                             </div>
 
@@ -130,19 +130,19 @@ export default function GuaranteedResultsSEO() {
 
                                     src={resultImage2}
                                     alt="Traffic rate dashboard showing 10.8K total clicks and 906.4K search impressions"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
                                 />
                             </div>
                         </div>
 
                         {/* Center Column - RANK #1 Card */}
                         <div className="col-span-12 md:col-span-6 lg:col-span-3">
-                            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 h-full">
+                            <div className="bg-white rounded-2xl  shadow-lg hover:shadow-xl transition-all duration-300 h-full">
                                 <img
 
                                     src={resultImage3}
                                     alt="Google search rankings showing #1 position for multiple search queries"
-                                    className="w-full h-full"
+                                    className="w-auto h-auto"
                                 />
                             </div>
                         </div>
@@ -155,7 +155,7 @@ export default function GuaranteedResultsSEO() {
                                     //   src={resultImage5}
                                     src={resultImage4}
                                     alt="Traffic increase heat map showing improved local visibility"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
                                 />
                             </div>
 
@@ -164,7 +164,7 @@ export default function GuaranteedResultsSEO() {
                                 <img
                                     src={resultImage5}
                                     alt="Organic traffic growth chart showing 249.3K impressions over time"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
                                 />
                             </div>
 
@@ -173,7 +173,7 @@ export default function GuaranteedResultsSEO() {
                                 <img
                                     src={resultImage6}
                                     alt="Complete analytics dashboard showing clicks, impressions, CTR and position metrics"
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full"
                                 />
                             </div>
                         </div>

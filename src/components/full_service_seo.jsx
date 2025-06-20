@@ -13,7 +13,8 @@ import unitedTeamBefore from '../assets/211_before.jpeg';
 import unitedTeamAfter from '../assets/300_after.jpeg';
 import afterIcon from '../assets/After.png';
 import beforeIcon from '../assets/Before.png';
-import mover from '../assets/switch-base.png';
+import mover from '../assets/Drag_Handle.png';
+// import mover from '../assets/switch-base.png';
 import backgroundImage from "../assets/full_service_bg.png";
 
 export default function FullServiceSEO() {
@@ -156,10 +157,10 @@ export default function FullServiceSEO() {
                   className="w-full h-full "
                   draggable={false}
                 />
-                 <div
+                {/* <div
     className="absolute top-0 left-0 w-full h-full bg-gray-500"
     style={{opacity:'0.2'}}
-  ></div>
+  ></div> */}
                 <div className="absolute top-1 right-1 px-2 py-1">
                   <div className="flex items-center gap-1">
                     <img
@@ -203,7 +204,9 @@ export default function FullServiceSEO() {
                     <img
                       src={mover}
                       alt="slider icon"
-                      className="w-6 h-6 object-contain drop-shadow-lg"
+                      // className="object-contain" 
+                      style={{ height: '240px' }}  // Adjust this value as needed
+                    // Or use a Tailwind class like h-6, h-8, etc.
                     />
                   </div>
                 </div>
@@ -340,11 +343,11 @@ export default function FullServiceSEO() {
                         e.target.onerror = null;
                       }}
                     />
-                        <div
+                    {/* <div
     className="absolute top-0 left-0 w-full h-full bg-gray-500"
     style={{opacity:'0.2'}}
-  ></div>
-                    <div className="absolute top-3 right-3 px-2 py-1 ">
+  ></div> */}
+                    <div className="absolute top-1 right-1 px-2 py-1 ">
                       <div className="flex items-center gap-1">
                         <img
                           src={beforeIcon}
@@ -369,7 +372,7 @@ export default function FullServiceSEO() {
                         e.target.onerror = null;
                       }}
                     />
-                    <div className="absolute top-3 left-3 px-2 py-1">
+                    <div className="absolute top-1 left-1 px-2 py-1">
                       <div className="flex items-center gap-1">
                         <img
                           src={afterIcon}
@@ -382,11 +385,17 @@ export default function FullServiceSEO() {
 
                   {/* Slider Line */}
                   <div
-                    className="absolute top-0 bottom-0 w-1 bg-white/80 shadow-lg"
+                    className="absolute top-0 bottom-0 w-1 h-100px"
                     style={{ left: `${sliderPosition}%`, transform: 'translateX(-50%)' }}
-                    >
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8  flex items-center justify-center cursor-ew-resize">
-                      <img src={mover} alt="slider icon" className=" object-contain" />
+                  >
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center cursor-ew-resize">
+                      <img
+                        src={mover}
+                        alt="slider icon"
+                        // className="object-contain" 
+                        style={{ height: '240px' }}  // Adjust this value as needed
+                      // Or use a Tailwind class like h-6, h-8, etc.
+                      />
                     </div>
                   </div>
 
