@@ -21,7 +21,7 @@ const Footer = () => {
                         {/* Left Section - Logo and Tagline */}
                         <div className="col-start-2 col-span-5">
                             <div className="mb-6">
-                                <img src={otfLogo} alt="OTF Marketing" className="h-21 mb-1" />
+                                <img src={otfLogo} alt="OTF Marketing" className="h-21 mb-4" />
                                 <h2 className="text-[27px] font-normal font-montserrat leading-relaxed">
                                     Streamline Your Marketing<br />
                                     and Maximize Your Growth
@@ -31,7 +31,7 @@ const Footer = () => {
 
                         {/* Middle Section - Contact */}
                         <div className="col-span-3">
-                            <h3 className="text-[17px] font-semibold font-montserrat mb-6 tracking-wide">
+                            <h3 className="text-[17px] font-semibold font-montserrat mb-7 tracking-wide">
                                 CONTACT US
                             </h3>
                             <div className="space-y-1">
@@ -46,7 +46,7 @@ const Footer = () => {
 
                         {/* Right Section - Company */}
                         <div className="col-span-3">
-                            <h3 className="text-[17px] font-semibold font-montserrat mb-6 tracking-wide">
+                            <h3 className="text-[17px] font-semibold font-montserrat mb-7 tracking-wide">
                                 COMPANY
                             </h3>
                             <div className="space-y-2">

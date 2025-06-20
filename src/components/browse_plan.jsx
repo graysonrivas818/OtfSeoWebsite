@@ -67,14 +67,14 @@ const BrowsePlans = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 max-w-[1310px] mx-auto items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 max-w-[1290px] mx-auto items-center">
           {plans.map((plan, index) => (
             <div
               key={index}
               className={`
                   backdrop-blur-sm pt-5 pb-5 rounded-2xl p-4  
-                  ${plan.featured ? "bg-[#006BFF]/90 border border-white/70 transform lg:scale-108 lg:shadow-2xl" : "bg-[#1E3662]/80  border border-white/70"}
-                  max-w-[370px] sm:max-w-[420px] mx-auto w-full 
+                  ${plan.featured ? "bg-[#006BFF]/90 border border-white/50 transform lg:scale-108 lg:shadow-2xl" : "bg-[#1E3662]/80  border border-white/50"}
+                  max-w-[370px] sm:max-w-[400px] mx-auto w-full 
                 `}
 
             >
