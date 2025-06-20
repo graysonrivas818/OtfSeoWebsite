@@ -20,8 +20,8 @@ const logos = [
   { id: 1, image: logo1, alt: "Logo 1", sizeClass: "h-12 w-auto" },
   { id: 2, image: logo2, alt: "Logo 2", sizeClass: "h-23 w-auto" },
   { id: 3, image: logo3, alt: "Logo 3", sizeClass: "h-18 w-auto" },
-  { id: 4, image: logo5, alt: "Logo 5", sizeClass: "h-18 w-auto" },
-  { id: 5, image: logo6, alt: "Logo 6", sizeClass: "h-16 w-auto" },
+  { id: 4, image: logo5, alt: "Logo 5", sizeClass: "h-15 w-auto" },
+  { id: 5, image: logo6, alt: "Logo 6", sizeClass: "h-13 w-auto" },
   { id: 6, image: logo7, alt: "Logo 7", sizeClass: "h-20 w-auto" }
 ];
 

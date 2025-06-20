@@ -159,7 +159,7 @@ const Footer = () => {
 
                     {/* Partner Logos */}
                     <div className="">
-                        <div className="flex justify-between items-center mx-1  ">
+                        <div className="flex justify-between items-center mx-auto  ">
                             <img src={Meta} alt="Meta" className="h-19" />
                             <img  src={GoogleGuaranteed} alt="Google Guaranteed" className="h-10" />
                             <img src={Google} alt="Google Partner" className="h-22" />
@@ -167,9 +167,9 @@ const Footer = () => {
                     </div>
 
                     <div className="mb-8">
-                        <div className="flex justify-around items-center mx-3">
-                            <img src={LinkedIn} alt="LinkedIn" className="h-7" />
-                            <img src={Instagram} alt="Instagram" className="h-7" />
+                        <div className="flex justify-around items-center mx-1">
+                            <img src={LinkedIn} alt="LinkedIn" className="h-6" />
+                            <img src={Instagram} alt="Instagram" className="h-6" />
                         </div>
                     </div>
                     <div className="relative max-w-4xl mx-auto mt-2">
