@@ -1,7 +1,7 @@
 import React from "react";
-import bgImage from "../assets/mission_is_rank_1_bg.png";
-import contentImage from "../assets/mission_is_rank_1_content.png";
-import arrowIcon from "../assets/circle-arrow-right-01.png";
+import bgImage from "/assets/mission_is_rank_1_bg.png";
+import contentImage from "/assets/mission_is_rank_1_content.png";
+import arrowIcon from "/assets/circle-arrow-right-01.png";
 
 import { useNavigate } from 'react-router-dom'
 

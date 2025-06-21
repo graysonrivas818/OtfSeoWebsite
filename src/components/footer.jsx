@@ -1,10 +1,10 @@
 import React from 'react';
-import otfLogo from "../assets/otf_footer logo.png";
-import Meta from "../assets/Meta.png";
-import Google from "../assets/google.png";
-import LinkedIn from "../assets/linkedin.png";
-import Instagram from "../assets/instagram.png";
-import GoogleGuaranteed from "../assets/google_guaranteed.png";
+import otfLogo from "/assets/otf_footer logo.png";
+import Meta from "/assets/Meta.png";
+import Google from "/assets/google.png";
+import LinkedIn from "/assets/linkedin.png";
+import Instagram from "/assets/instagram.png";
+import GoogleGuaranteed from "/assets/google_guaranteed.png";
 
 import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";

@@ -2,12 +2,12 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { useNavigate, useLocation } from "react-router-dom"
-import BirdlineIcon from "../assets/Birdline-Icon3.png.png";
-import Meta from "../assets/Meta.png";
-import Google from "../assets/google.png";
-import LinkedIn from "../assets/linkedin.png";
-import Instagram from "../assets/instagram.png";
-import GoogleGuaranteed from "../assets/google_guaranteed.png";
+import BirdlineIcon from "/assets/Birdline-Icon3.png.png";
+import Meta from "/assets/Meta.png";
+import Google from "/assets/google.png";
+import LinkedIn from "/assets/linkedin.png";
+import Instagram from "/assets/instagram.png";
+import GoogleGuaranteed from "/assets/google_guaranteed.png";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()

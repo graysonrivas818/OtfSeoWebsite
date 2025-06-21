@@ -1,10 +1,10 @@
-import backgroundImage from "../assets/gurarented_result_bg.png";
-import resultImage1 from "../assets/gurarented_result_1.png";
-import resultImage2 from "../assets/gurarented_result_2.png";
-import resultImage3 from "../assets/gurarented_result_3.png";
-import resultImage4 from "../assets/gurarented_result_4.png";
-import resultImage5 from "../assets/gurarented_result_5.png";
-import resultImage6 from "../assets/gurarented_result_6.png";
+import backgroundImage from "/assets/gurarented_result_bg.png";
+import resultImage1 from "/assets/gurarented_result_1.png";
+import resultImage2 from "/assets/gurarented_result_2.png";
+import resultImage3 from "/assets/gurarented_result_3.png";
+import resultImage4 from "/assets/gurarented_result_4.png";
+import resultImage5 from "/assets/gurarented_result_5.png";
+import resultImage6 from "/assets/gurarented_result_6.png";
 
 export default function GuaranteedResultsSEO() {
     const services = [

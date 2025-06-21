@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
-import browsePlanBg from "../assets/Browse_plan_bg.png";
-import otfForPricing from "../assets/otf_for_pricing.png";
+import browsePlanBg from "/assets/Browse_plan_bg.png";
+import otfForPricing from "/assets/otf_for_pricing.png";
 
 const BrowsePlans = () => {
   const navigate = useNavigate()

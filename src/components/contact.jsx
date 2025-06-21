@@ -33,7 +33,7 @@
 // };
 
 // export default Contact;
-import backgroundImage from "../assets/Header.png";
+import backgroundImage from "/assets/Header.png";
 import Footer from "./footer";
 
 const Contact = () => {

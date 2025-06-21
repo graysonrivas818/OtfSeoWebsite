@@ -3,19 +3,19 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 // Mock images - replace with your actual imports
-import marvelJacketBefore from '../assets/350_before.jpeg';
-import marvelJacketAfter from '../assets/350_after.jpeg';
-import packNFreshBefore from '../assets/211_before.jpeg';
-import packNFreshAfter from '../assets/211_after.jpeg';
-import aahandBefore from '../assets/360_before.jpeg';
-import aahandAfter from '../assets/360_after.jpeg';
-import unitedTeamBefore from '../assets/211_before.jpeg';
-import unitedTeamAfter from '../assets/300_after.jpeg';
-import afterIcon from '../assets/After.png';
-import beforeIcon from '../assets/Before.png';
-import mover from '../assets/Drag_Handle.png';
-// import mover from '../assets/switch-base.png';
-import backgroundImage from "../assets/full_service_bg.png";
+import marvelJacketBefore from '/assets/350_before.jpeg';
+import marvelJacketAfter from '/assets/350_after.jpeg';
+import packNFreshBefore from '/assets/211_before.jpeg';
+import packNFreshAfter from '/assets/211_after.jpeg';
+import aahandBefore from '/assets/360_before.jpeg';
+import aahandAfter from '/assets/360_after.jpeg';
+import unitedTeamBefore from '/assets/211_before.jpeg';
+import unitedTeamAfter from '/assets/300_after.jpeg';
+import afterIcon from '/assets/After.png';
+import beforeIcon from '/assets/Before.png';
+import mover from '/assets/Drag_Handle.png';
+// import mover from '/assets/switch-base.png';
+import backgroundImage from "/assets/full_service_bg.png";
 
 export default function FullServiceSEO() {
 

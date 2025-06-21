@@ -1,10 +1,10 @@
 import React from 'react';
-import logo1 from '../assets/slider_logo_1.png';
-import logo2 from '../assets/slider_logo_2.png';
-import logo3 from '../assets/slider_logo_3.png';
-import logo5 from '../assets/slider_logo_5.png';
-import logo6 from '../assets/slider_logo_6.png';
-import logo7 from '../assets/slider_logo_7.png';
+import logo1 from '/assets/slider_logo_1.png';
+import logo2 from '/assets/slider_logo_2.png';
+import logo3 from '/assets/slider_logo_3.png';
+import logo5 from '/assets/slider_logo_5.png';
+import logo6 from '/assets/slider_logo_6.png';
+import logo7 from '/assets/slider_logo_7.png';
 import '../App.css';
 
 const LogoSlider = () => {

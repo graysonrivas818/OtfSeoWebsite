@@ -1,8 +1,8 @@
 import React from "react";
-import backgroundImage from "../assets/Header.png";
-import dashboardImage1 from "../assets/Group 1686555164.png";
-import logo1 from "../assets/image 15.png";
-import logo2 from "../assets/qt=q_95 1.png";
+import backgroundImage from "/assets/Header.png";
+import dashboardImage1 from "/assets/Group 1686555164.png";
+import logo1 from "/assets/image 15.png";
+import logo2 from "/assets/qt=q_95 1.png";
 import { useNavigate } from 'react-router-dom'
 
 export default function MarketingLanding() {

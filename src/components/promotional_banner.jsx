@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import contentImage from "../assets/promotional_banner_bg.png";
-import centerBlueImage from "../assets/center_blue_images.png";
-import centerBlueImageMobile from "../assets/center_blue_images_mobile1.png";
-// import centerBlueImageMobile from "../assets/center_blue_images_mobile.png";
-import arrowIcon from "../assets/circle-arrow-right-01.png";
+import contentImage from "/assets/promotional_banner_bg.png";
+import centerBlueImage from "/assets/center_blue_images.png";
+import centerBlueImageMobile from "/assets/center_blue_images_mobile1.png";
+// import centerBlueImageMobile from "/assets/center_blue_images_mobile.png";
+import arrowIcon from "/assets/circle-arrow-right-01.png";
 
 import { useNavigate } from 'react-router-dom'
 
