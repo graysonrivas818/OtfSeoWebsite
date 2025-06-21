@@ -85,8 +85,13 @@ const Footer = () => {
                             <img src={Meta} alt="Meta" className="h-20" />
                             <img src={GoogleGuaranteed} alt="Google Guaranteed" className="h-12    " />
                             <img src={Google} alt="Google Partner" className="h-25" />
-                            <img src={LinkedIn} alt="LinkedIn" className="h-7" />
-                            <img src={Instagram} alt="Instagram" className="h-7" />
+                            <a href="https://www.linkedin.com/in/sam-watts-2a4842b6/" target="_blank" rel="noopener noreferrer">
+                                <img src={LinkedIn} alt="LinkedIn" className="h-7" />
+                            </a>
+
+                            <a href="https://www.instagram.com/otfmarketing/" target="_blank" rel="noopener noreferrer">
+                                <img src={Instagram} alt="Instagram" className="h-7" />
+                            </a>
                         </div>
 
                     </div>
@@ -161,15 +166,21 @@ const Footer = () => {
                     <div className="">
                         <div className="flex justify-between items-center mx-auto  ">
                             <img src={Meta} alt="Meta" className="h-19" />
-                            <img  src={GoogleGuaranteed} alt="Google Guaranteed" className="h-10" />
+                            <img src={GoogleGuaranteed} alt="Google Guaranteed" className="h-10" />
                             <img src={Google} alt="Google Partner" className="h-22" />
                         </div>
                     </div>
 
                     <div className="mb-8">
                         <div className="flex justify-around items-center mx-1">
-                            <img src={LinkedIn} alt="LinkedIn" className="h-6" />
-                            <img src={Instagram} alt="Instagram" className="h-6" />
+                            <a href="https://www.linkedin.com/in/sam-watts-2a4842b6/" target="_blank" rel="noopener noreferrer">
+                                <img src={LinkedIn} alt="LinkedIn" className="h-6" />
+                            </a>
+
+                            <a href="https://www.instagram.com/otfmarketing/" target="_blank" rel="noopener noreferrer">
+                                <img src={Instagram} alt="Instagram" className="h-6" />
+                            </a>
+
                         </div>
                     </div>
                     <div className="relative max-w-4xl mx-auto mt-2">

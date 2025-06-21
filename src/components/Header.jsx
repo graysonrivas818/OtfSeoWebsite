@@ -149,7 +149,7 @@ export default function Header() {
                       key={item.name}
                       onClick={item.type === "scroll" ? () => scrollToSection(item.sectionId) : item.action}
                       className="block w-full text-left text-xl font-medium font-montserrat text-white border-t-2 border-white/20 pt-4 pl-5 hover:text-gray-300 transition-colors"
-                      
+
                     >
                       {item.name}
                     </button>
@@ -171,8 +171,14 @@ export default function Header() {
                 {/* Social Media Icons */}
                 <div className="mb-4">
                   <div className="flex justify-between items-center mx-5">
-                    <img src={LinkedIn} alt="LinkedIn" className="h-7" />
-                    <img src={Instagram} alt="Instagram" className="h-6" />
+                    <a href="https://www.linkedin.com/in/sam-watts-2a4842b6/" target="_blank" rel="noopener noreferrer">
+
+                      <img src={LinkedIn} alt="LinkedIn" className="h-7" />
+                    </a>
+                    <a href="https://www.instagram.com/otfmarketing/" target="_blank" rel="noopener noreferrer">
+
+                      <img src={Instagram} alt="Instagram" className="h-6" />
+                    </a>
                   </div>
                 </div>
 
