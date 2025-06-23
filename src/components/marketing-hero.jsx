@@ -67,7 +67,7 @@ export default function MarketingLanding() {
 
               {/* CTA Buttons */}
               <div className="flex flex-row sm:flex-row gap-4 mt-12 justify-center lg:justify-start">
-                <button className="bg-[#0063FF] text-white px-6 py-2 sm:px-8 sm:py-3 sm:w-[180px] sm:h-[50px] lg:px-6 lg:py-3 lg:w-[170px] rounded-full font-bold font-montserrat text-sm sm:text-base w-[150px] h-[40px]">
+                <button onClick={() => navigate('/contact')} className="cursor-pointer bg-[#0063FF] text-white px-6 py-2 sm:px-8 sm:py-3 sm:w-[180px] sm:h-[50px] lg:px-6 lg:py-3 lg:w-[170px] rounded-full font-bold font-montserrat text-sm sm:text-base w-[150px] h-[40px]">
                   Start Ranking
                 </button>
                 <button onClick={() => navigate('/contact')} className="cursor-pointer border-2 border-white/20 hover:border-white text-white px-6 py-2 sm:px-8 sm:py-3 sm:w-[180px] sm:h-[50px] lg:px-6 lg:py-3 lg:w-[170px] rounded-full font-bold font-montserrat text-sm sm:text-base w-[150px] h-[40px]">

@@ -57,7 +57,7 @@ const Footer = () => {
                                     Pricing
                                 </HashLink>
                                 <a
-                                    href="https://campaigns.otf.marketing/"
+                                    href="https://otf.marketing/"
                                     className="block text-[15px] font-normal font-montserrat leading-5"
                                     rel="noreferrer"
                                 >
@@ -140,7 +140,7 @@ const Footer = () => {
                                 Advertising
                             </HashLink> */}
                             <a
-                                href="https://campaigns.otf.marketing/"
+                                href="https://otf.marketing/"
                                 className="block text-[15px] font-montserrat leading-3" rel="noreferrer"
                             >
                                 Advertising
