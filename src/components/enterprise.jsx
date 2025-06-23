@@ -38,7 +38,7 @@ const Enterprise = () => {
                     <img
                         src={enterpriseCenter}
                         alt="Enterprise"
-                        className=" block max-h-[80vh] max-w-[75%] object-contain"
+                        className=" block max-h-[80vh] max-w-[80%] object-contain"
                     />
                 </div>
 
