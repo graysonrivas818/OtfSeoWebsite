@@ -47,22 +47,12 @@
 
 // export default Contact;
 
-import { useEffect } from "react";
+
+
 import backgroundImage from "/assets/Header.png";
 import Footer from "./footer";
 
 const Contact = () => {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://link.msgsndr.com/js/form_embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <>
       <section
@@ -78,15 +68,13 @@ const Contact = () => {
               Work With Us
             </h2>
           </div>
-
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/IJlmCA9Y7PJLaOGMDCgh"
-            style={{
-              width: "100%",
-              height: "100%",
-              border: "none",
-              borderRadius: "20px",
-              minHeight: "920px",
+               className="w-full rounded-[20px]"
+            style={{ 
+              border: "none", 
+              height: "803px",
+              minHeight: "923px"
             }}
             id="inline-IJlmCA9Y7PJLaOGMDCgh"
             data-layout="{'id':'INLINE'}"
@@ -96,15 +84,17 @@ const Contact = () => {
             data-activation-value=""
             data-deactivation-type="neverDeactivate"
             data-deactivation-value=""
-            data-form-name="SEO Form"
+            data-form-name="SEO Form "
             data-height="803"
             data-layout-iframe-id="inline-IJlmCA9Y7PJLaOGMDCgh"
             data-form-id="IJlmCA9Y7PJLaOGMDCgh"
-            title="SEO Form"
+            title="SEO Form "
           ></iframe>
         </div>
       </section>
       <Footer />
+      {/* Script for form embed functionality */}
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     </>
   );
 };
