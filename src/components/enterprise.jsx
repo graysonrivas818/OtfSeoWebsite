@@ -28,17 +28,17 @@ const Enterprise = () => {
                     />
 
                     {/* Laptop version - visible from 1024px (lg) up to 1279px (before xl) */}
-                    {/* <img
+                    <img
                         src={enterpriseCenter}
                         alt="Enterprise Laptop"
-                        className="hidden lg:block xl:hidden w-[83%] h-auto object-contain"
-                    /> */}
+                        className="hidden lg:block xl:hidden w-[80%] h-auto object-contain"
+                    />
 
                     {/* Desktop version - visible from 1280px and above */}
                     <img
                         src={enterpriseCenter}
                         alt="Enterprise"
-                        className=" block max-h-[80vh] max-w-[80%] object-contain"
+                        className=" hidden xl:block max-h-[80vh] max-w-[80%] object-contain"
                     />
                 </div>
 
