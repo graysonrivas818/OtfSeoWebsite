@@ -63,7 +63,7 @@ export default function PromotionalBanner() {
                                     Or We Work For Free!
                                 </h2>
                                 <p className="max-w-2xl md:max-w-[735px]  text-white/70 text-base md:text-[19px] mb-10  font-montserrat">
-                                    We back our plans with a 60 day money back guarantee if they do not see measurable results and we also guarantee #1 rankings or we will work for free until you are ranked #1.
+                                    We back our plans with a 60 day money back guarantee if you do not see measurable results and we also guarantee #1 rankings or we will work for free until you are ranked #1.
                                 </p>
                                 <button onClick={() => navigate('/contact')} className="bg-[#0a2952] cursor-pointer text-white px-4 py-2 md:px-6 md:py-3 lg:px-10 lg:py-4 rounded-[25px] font-semibold font-montserrat text-sm md:text-base lg:text-xl flex items-center gap-2">
                                     Get Started

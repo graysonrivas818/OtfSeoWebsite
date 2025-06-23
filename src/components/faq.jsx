@@ -65,7 +65,7 @@ const FAQ = () => {
 
   return (
     <div
-      className="w-full bg-cover bg-center bg-no-repeat py-8 lg:py-24 relative"
+      className="w-full bg-cover bg-center bg-no-repeat py-8 lg:py-16 relative"
       style={{ backgroundImage: `url(${FAQbg})`, backgroundSize: "100% 100%" }}
     >
         <div className="relative z-10 w-full max-w-[1280px] px-4 sm:px-7 mx-auto">
