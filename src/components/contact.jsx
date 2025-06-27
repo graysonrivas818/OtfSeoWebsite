@@ -64,7 +64,7 @@ const Contact = () => {
       >
         <div className="pt-20 px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-4xl leading-[36px] text-center font-bold text-white">
+            <h2 className="text-4xl leading-[36px] text-center font-bold font-montserrat text-white">
               Work With Us
             </h2>
           </div>

@@ -1,7 +1,6 @@
 // src/pages/ContactPage.jsx
 import { useEffect } from "react";
-import Contact from "../components/contact.jsx";
-import TermsAndConditions from "../components/TermsAndConditions.jsx";
+import FormSuccess from "../components/FormSuccess.jsx";
 
 export default function ContactPage() {
 
@@ -13,8 +12,7 @@ export default function ContactPage() {
   return (
     <>
       <div className="min-h-screen">
-        
-        <Contact />
+        {/* <FormSuccess /> */}
       </div>
     </>
   )
