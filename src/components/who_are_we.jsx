@@ -34,7 +34,7 @@ const WhoWeAre = () => {
         },
         {
             image: person2,
-            name: "Mia Arif",
+            name: "Sumaiya Arif",
             title: "Web Developer & SEO Expert",
             achievements: [
                 "Software Engineer Graduate",
