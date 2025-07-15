@@ -88,7 +88,7 @@ useEffect(() => {
               alt="OTF Logo"
               // width="30"
               // height="20"
-              className="h-6 w-auto pl-4 sm:pl-10"
+              className="h-10 w-auto pl-4 sm:pl-10"
             />
           </div>
 
@@ -129,7 +129,7 @@ useEffect(() => {
               <img
                 src={BirdlineIcon}
                 alt="OTF Logo"
-                className="h-6 w-auto pl-4 cursor-pointer"
+                className="h-10 w-auto pl-4 cursor-pointer"
                 onClick={goToHome}
               />
               <button
