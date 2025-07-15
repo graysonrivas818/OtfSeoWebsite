@@ -1,17 +1,36 @@
 import React from "react";
 import backgroundImage from "/assets/Header.webp";
+import mobilebackgroundImage from "/assets/heromobile.webp";
 import dashboardImage1 from "/assets/Group 1686555164.png";
 import logo1 from "/assets/image 15.png";
 import logo2 from "/assets/qt=q_95 1.png";
 import { useNavigate } from 'react-router-dom'
 
 export default function MarketingLanding() {
+
+function useMobile(){
+  const [isMobile, setIsMobile] = React.useState(false);
+  
+  React.useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 640);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  return isMobile;
+}
+const isMobile = useMobile();
   const navigate = useNavigate()
   return (
+
     <section
-      class="w-full bg-cover bg-no-repeat overflow-auto"
-      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "100% 100%", }}
+      className="w-full bg-cover  bg-no-repeat"
+      style={{ backgroundImage: `url(${isMobile ? mobilebackgroundImage : backgroundImage})`, backgroundSize: "100% 100%" }}
     >
+
+
+ 
       <div className="w-full h-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:py-16 h-full flex items-center">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-8 items-center w-full">

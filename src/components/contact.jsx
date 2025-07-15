@@ -62,7 +62,7 @@ const Contact = () => {
           backgroundSize: "100% 100%",
         }}
       >
-        <div className="pt-20 px-4">
+        <div className="pt-20 px-4 pb-18">
           <div className="mb-12 text-center">
             <h2 className="text-4xl leading-[36px] text-center font-bold font-montserrat text-white">
               Work With Us
@@ -73,8 +73,8 @@ const Contact = () => {
                className="w-full rounded-[20px]"
             style={{ 
               border: "none", 
-              height: "803px",
-              minHeight: "923px"
+              height: "820px",
+              minHeight: "973px"
             }}
             id="inline-IJlmCA9Y7PJLaOGMDCgh"
             data-layout="{'id':'INLINE'}"
