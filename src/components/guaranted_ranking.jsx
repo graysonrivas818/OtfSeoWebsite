@@ -1,5 +1,5 @@
 import { Check } from "lucide-react";
-import backgroundImage from "/assets/map_guaranted.png";
+import backgroundImage from "/assets/map_guaranted.webp";
 import searchImage from "/assets/Group 1686555130.png";
 import { useNavigate } from 'react-router-dom'
 import arrowIcon from "/assets/circle-arrow-right-01.png";

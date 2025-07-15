@@ -1,5 +1,5 @@
 // import backgroundImage from "../assets/iPhone_16_bg.png";
-import backgroundImage from "/assets/iPhone_16_bg1.png";
+import backgroundImage from "/assets/iPhone_16_bg1.webp";
 import phoneImage from "/assets/iPhone_16_Pro.png";
 import arrowIcon from "/assets/circle-arrow-right-01.png";
 import BirdlineIcon from "/assets/Birdline-Icon3.png.png";

@@ -1,4 +1,4 @@
-import backgroundImage from "/assets/Header.png";
+import backgroundImage from "/assets/Header.webp";
 import Footer from "./footer";
 
 const PrivacyPolicy = () => {

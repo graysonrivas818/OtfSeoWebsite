@@ -1,6 +1,6 @@
 
 import { Check } from "lucide-react";
-import backgroundImage from "/assets/local_search.png";
+import backgroundImage from "/assets/local_search.webp";
 import dashboardImage2 from "/assets/Frame 1686555124.png";
 import arrowIcon from "/assets/circle-arrow-right-01.png";
 

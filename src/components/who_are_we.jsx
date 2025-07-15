@@ -1,6 +1,6 @@
 import React from 'react';
 
-import backgroundImage from "/assets/person-component_bg.png";
+import backgroundImage from "/assets/person-component_bg.webp";
 import whowearemobile from '/assets/who_we_are_mobile.png';
 import person1 from "/assets/person1.png";
 import person2 from "/assets/person2.jpeg";

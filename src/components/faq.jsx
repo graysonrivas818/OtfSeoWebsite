@@ -1,5 +1,5 @@
 import { useState,useEffect } from 'react';
-import FAQbg from '/assets/FAQ_bg.png';
+import FAQbg from '/assets/FAQ_bg.webp';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
-import contentImage from "/assets/promotional_banner_bg.png";
+import contentImage from "/assets/promotional_banner_bg.webp";
 import centerBlueImage from "/assets/center_blue_images.png";
 import centerBlueImageMobile from "/assets/center_blue_images_mobile1.png";
 // import centerBlueImageMobile from "/assets/center_blue_images_mobile.png";

@@ -1,4 +1,4 @@
-import backgroundImage from "/assets/enterprise_bg.png";
+import backgroundImage from "/assets/enterprise_bg.webp";
 import mobileImage from '/assets/enterprise_center_mobile.png';
 import enterpriseCenter from "/assets/enterprise_center.png";
 

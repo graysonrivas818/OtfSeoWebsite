@@ -1,4 +1,4 @@
-import backgroundImage from "/assets/businees_profile_ranking.png";
+import backgroundImage from "/assets/businees_profile_ranking.webp";
 import rankingImage from "/assets/businees_profile_ranking_picture.png";
 import arrowIcon from "/assets/circle-arrow-right-01.png";
 

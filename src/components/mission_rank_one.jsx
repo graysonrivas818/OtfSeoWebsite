@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "/assets/mission_is_rank_1_bg.png";
+import bgImage from "/assets/mission_is_rank_1_bg.webp";
 import contentImage from "/assets/mission_is_rank_1_content.png";
 import arrowIcon from "/assets/circle-arrow-right-01.png";
 
