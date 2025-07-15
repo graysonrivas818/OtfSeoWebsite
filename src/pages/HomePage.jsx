@@ -173,44 +173,57 @@ export default function HomePage() {
   return (
     <>
 
-   <section id="seo">
-      <MarketingHero fetchpriority="high" />
-    </section>
+      {/* Critical content */}
+      <section id="seo">
+        <MarketingHero fetchpriority="high" />
+      </section>
 
-    <section id="services">
-      <Seolandinglocal fetchpriority="high" />
-    </section>
-
-    <Guaranted fetchpriority="high" />
-
-    <section id="portfolio">
-      <FullServiceSEO fetchpriority="high" />
-    </section>
-
-    <BusinessProfileRanking fetchpriority="high" />
-
+      {/* Lazy-loaded content */}
       <ErrorBoundary fallback={<div className="p-4 text-red-500">Failed to load content</div>}>
-      <Suspense fallback={<LoadingPlaceholder />}>
-        <MissionRankOne />
-        <IPhone16ProSection />
-        <GuaranteedResults />
-        <LogoSlider />
-        <Testimonial />
+        <Suspense fallback={<LoadingPlaceholder />}>
+          <section 
+            id="services" 
+            onMouseEnter={() => handlePrefetch('services')}
+          >
+            <Seolandinglocal />
+          </section>
 
-        <section id="seoteam" onMouseEnter={() => handlePrefetch('seoteam')}>
-          <WhoWeAre />
-        </section>
+          <Guaranted />
 
-        <section id="pricing" onMouseEnter={() => handlePrefetch('pricing')}>
-          <BrowsePlans />
-        </section>
+          <section 
+            id="portfolio"
+            onMouseEnter={() => handlePrefetch('portfolio')}
+          >
+            <FullServiceSEO />
+          </section>
 
-        <Enterprise />
-        <FAQ />
-        <PromotionalBanner />
-        <Footer />
-      </Suspense>
-    </ErrorBoundary>
+          <BusinessProfileRanking />
+          <MissionRankOne />
+          <IPhone16ProSection />
+          <GuaranteedResults />
+          <LogoSlider />
+          <Testimonial />
+
+          <section 
+            id="seoteam"
+            onMouseEnter={() => handlePrefetch('seoteam')}
+          >
+            <WhoWeAre />
+          </section>
+
+          <section 
+            id="pricing"
+            onMouseEnter={() => handlePrefetch('pricing')}
+          >
+            <BrowsePlans />
+          </section>
+
+          <Enterprise />
+          <FAQ />
+          <PromotionalBanner />
+          <Footer />
+        </Suspense>
+      </ErrorBoundary>
     </>
   );
 }
