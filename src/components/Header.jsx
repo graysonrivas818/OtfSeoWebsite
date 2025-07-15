@@ -3,7 +3,7 @@
 import { useState,useEffect  } from "react"
 import { Menu, X } from "lucide-react"
 import { useNavigate, useLocation } from "react-router-dom"
-import BirdlineIcon from "/assets/Birdline-Icon3.png.png";
+import BirdlineIcon from "/assets/white-logo.png";
 import Meta from "/assets/Meta.png";
 import Google from "/assets/google.png";
 import LinkedIn from "/assets/linkedin.png";
@@ -88,7 +88,7 @@ useEffect(() => {
               alt="OTF Logo"
               // width="30"
               // height="20"
-              className="h-10 w-auto pl-4 sm:pl-10"
+              className="h-6 w-auto pl-4 sm:pl-10"
             />
           </div>
 
@@ -129,7 +129,7 @@ useEffect(() => {
               <img
                 src={BirdlineIcon}
                 alt="OTF Logo"
-                className="h-10 w-auto pl-4 cursor-pointer"
+                className="h-6 w-auto pl-4 cursor-pointer"
                 onClick={goToHome}
               />
               <button
