@@ -173,57 +173,44 @@ export default function HomePage() {
   return (
     <>
 
-      {/* Critical content */}
-      <section id="seo">
-        <MarketingHero fetchpriority="high" />
-      </section>
+   <section id="seo">
+      <MarketingHero fetchpriority="high" />
+    </section>
 
-      {/* Lazy-loaded content */}
+    <section id="services">
+      <Seolandinglocal fetchpriority="high" />
+    </section>
+
+    <Guaranted fetchpriority="high" />
+
+    <section id="portfolio">
+      <FullServiceSEO fetchpriority="high" />
+    </section>
+
+    <BusinessProfileRanking fetchpriority="high" />
+
       <ErrorBoundary fallback={<div className="p-4 text-red-500">Failed to load content</div>}>
-        <Suspense fallback={<LoadingPlaceholder />}>
-          <section 
-            id="services" 
-            onMouseEnter={() => handlePrefetch('services')}
-          >
-            <Seolandinglocal />
-          </section>
+      <Suspense fallback={<LoadingPlaceholder />}>
+        <MissionRankOne />
+        <IPhone16ProSection />
+        <GuaranteedResults />
+        <LogoSlider />
+        <Testimonial />
 
-          <Guaranted />
+        <section id="seoteam" onMouseEnter={() => handlePrefetch('seoteam')}>
+          <WhoWeAre />
+        </section>
 
-          <section 
-            id="portfolio"
-            onMouseEnter={() => handlePrefetch('portfolio')}
-          >
-            <FullServiceSEO />
-          </section>
+        <section id="pricing" onMouseEnter={() => handlePrefetch('pricing')}>
+          <BrowsePlans />
+        </section>
 
-          <BusinessProfileRanking />
-          <MissionRankOne />
-          <IPhone16ProSection />
-          <GuaranteedResults />
-          <LogoSlider />
-          <Testimonial />
-
-          <section 
-            id="seoteam"
-            onMouseEnter={() => handlePrefetch('seoteam')}
-          >
-            <WhoWeAre />
-          </section>
-
-          <section 
-            id="pricing"
-            onMouseEnter={() => handlePrefetch('pricing')}
-          >
-            <BrowsePlans />
-          </section>
-
-          <Enterprise />
-          <FAQ />
-          <PromotionalBanner />
-          <Footer />
-        </Suspense>
-      </ErrorBoundary>
+        <Enterprise />
+        <FAQ />
+        <PromotionalBanner />
+        <Footer />
+      </Suspense>
+    </ErrorBoundary>
     </>
   );
 }
