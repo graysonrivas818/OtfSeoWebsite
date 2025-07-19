@@ -3,7 +3,7 @@ import backgroundImage from "/assets/Header.webp";
 import mobilebackgroundImage from "/assets/heromobile.webp";
 import dashboardImage1 from "/assets/Group 1686555164.webp";
 import logo1 from "/assets/image 15.png";
-import logo2 from "/assets/qt=q_95 1.png";
+import logo2 from "/assets/slider_logo_6.png";
 import { useNavigate } from 'react-router-dom'
 
 export default function MarketingLanding() {
@@ -104,7 +104,7 @@ const isMobile = useMobile();
                   <img
                     src={logo2}
                     alt="Electric Logo"
-                    className="h-12 sm:h-12 lg:h-16 w-auto"
+                    className="h-10 sm:h-10 lg:h-14 w-auto"
                   />
                 </div>
               </div>
