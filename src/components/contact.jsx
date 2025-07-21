@@ -69,26 +69,27 @@ const Contact = () => {
             </h2>
           </div>
           <iframe
-            src="https://api.leadconnectorhq.com/widget/form/IJlmCA9Y7PJLaOGMDCgh"
+            src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
                className="w-full rounded-[20px]"
             style={{ 
               border: "none", 
-              height: "820px",
-              minHeight: "973px"
+              height: "850px",
+              minHeight: "1033px"
             }}
-            id="inline-IJlmCA9Y7PJLaOGMDCgh"
-            data-layout="{'id':'INLINE'}"
-            data-trigger-type="alwaysShow"
-            data-trigger-value=""
-            data-activation-type="alwaysActivated"
-            data-activation-value=""
-            data-deactivation-type="neverDeactivate"
-            data-deactivation-value=""
-            data-form-name="SEO Form "
-            data-height="803"
-            data-layout-iframe-id="inline-IJlmCA9Y7PJLaOGMDCgh"
-            data-form-id="IJlmCA9Y7PJLaOGMDCgh"
-            title="SEO Form "
+           id="inline-JHxFvBGJog1VN2TzWxc4" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="SEO"
+    data-height="960"
+    data-layout-iframe-id="inline-JHxFvBGJog1VN2TzWxc4"
+    data-form-id="JHxFvBGJog1VN2TzWxc4"
+    title="SEO"
+
           ></iframe>
         </div>
       </section>

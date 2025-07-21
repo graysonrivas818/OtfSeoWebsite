@@ -112,15 +112,30 @@ useEffect(() => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button
+          {/* <button
             onClick={toggleMenu}
             className="md:hidden p-2 rounded-md hover:bg-[#3A3D6B] transition-colors duration-200"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
+        </div> */}
+          <div className="md:hidden flex items-center space-x-3">
+            <button
+              className="bg-[#0063FF] text-white px-3 py-1.5 rounded-full text-sm font-bold font-montserrat "
+              onClick={goToContact}
+            >
+              Contact Us
+            </button>
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-md hover:bg-[#3A3D6B] transition-colors duration-200"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
-
         {/* Mobile Navigation Menu - Full Screen Overlay */}
         {isMenuOpen && (
           <div className="md:hidden fixed inset-0 bg-[#020816] z-50 flex flex-col">
