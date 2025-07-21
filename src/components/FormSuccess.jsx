@@ -13,7 +13,7 @@ const FormSuccess = () => {
           backgroundSize: "100% 100%",
         }}
       >
-        <div className="pt-40 px-4 flex flex-col items-center font-montserrat justify-center min-h-[70vh]">
+        <div className="pt-40 px-4 flex flex-col items-center font-montserrat justify-center min-h-[60vh]">
           <div className="bg-white rounded-[20px] p-8 max-w-2xl w-full text-center shadow-lg">
             <div className="flex justify-center mb-6">
               <CheckCircle className="w-16 h-16 text-green-500" />
@@ -31,7 +31,7 @@ const FormSuccess = () => {
               to="/" 
               className="inline-block px-6 py-3 bg-blue-600 font-montserrat text-white rounded-lg hover:bg-blue-700 transition-colors duration-200"
             >
-              Go back
+              Home
             </Link>
           </div>
         </div>
