@@ -20,3 +20,15 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+.hero-desktop {
+  background-image: url('/assets/Header.webp');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-mobile {
+  background-image: url('/assets/heromobile.webp');
+  background-size: cover;
+  background-position: center;
+}
+
