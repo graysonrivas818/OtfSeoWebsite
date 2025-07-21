@@ -1,9 +1,9 @@
 
 import { Check } from "lucide-react";
-import backgroundImage from "/assets/local_search.webp";
+// import backgroundImage from "/assets/local_search.webp";
 import dashboardImage2 from "/assets/Frame 1686555124.png";
 import arrowIcon from "/assets/circle-arrow-right-01.png";
-
+import '../App.css'
 import { useNavigate } from 'react-router-dom'
 
 export default function LocalSEOLanding() {
@@ -11,9 +11,10 @@ export default function LocalSEOLanding() {
 
   return (
     <section
-      className="w-full bg-cover bg-center bg-no-repeat  relative "
-      style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "100% 100%", }}
+      className="w-full bg-cover bg-center bg-no-repeat seo-desktop  relative "
+      // style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: "100% 100%", }}
     >
+      
       <div className="w-full h-full">
         <div className="max-w-[1350px] mx-auto px-4 sm:px-6 lg:py-8 h-full flex items-center">
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-16 items-center w-full">
