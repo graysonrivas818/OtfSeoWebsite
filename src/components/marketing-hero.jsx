@@ -24,7 +24,7 @@ const isMobile = useMobile();
   const navigate = useNavigate()
   return (
 
-    <section className={`w-full min-h-screen ${isMobile ? 'hero-mobile' : 'hero-desktop'}`}>
+<section className={`w-full min-h-screen ${isMobile ? 'hero-mobile' : 'hero-desktop'}`}>
 
 
 
