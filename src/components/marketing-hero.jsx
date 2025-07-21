@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import backgroundImage from "/assets/Header.webp";
 import mobilebackgroundImage from "/assets/heromobile.webp";
 import dashboardImage1 from "/assets/Group 1686555164.webp";
@@ -7,27 +8,40 @@ import logo2 from "/assets/slider_logo_6.png";
 import { useNavigate } from 'react-router-dom'
 
 export default function MarketingLanding() {
-
-function useMobile(){
+  const [bgLoaded, setBgLoaded] = React.useState(false);
   const [isMobile, setIsMobile] = React.useState(false);
-  
+  const navigate = useNavigate();
+
   React.useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth < 640);
     handleResize();
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+    
+    // Preload background
+    const img = new Image();
+    img.src = isMobile ? mobilebackgroundImage : backgroundImage;
+    img.onload = () => setBgLoaded(true);
+    
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isMobile]);
 
-  return isMobile;
-}
-const isMobile = useMobile();
-  const navigate = useNavigate()
   return (
+    <>
+      <Helmet>
+        <link rel="preload" href={backgroundImage} as="image" media="(min-width: 640px)" />
+        <link rel="preload" href={mobilebackgroundImage} as="image" media="(max-width: 639px)" />
+      </Helmet>
 
-    <section
-      className="w-full bg-cover  bg-no-repeat"
-      style={{ backgroundImage: `url(${isMobile ? mobilebackgroundImage : backgroundImage})`, backgroundSize: "100% 100%" }}
-    >
+      <section
+        className="w-full bg-cover bg-no-repeat transition-all duration-500"
+        style={{ 
+          backgroundImage: bgLoaded ? `url(${isMobile ? mobilebackgroundImage : backgroundImage})` : 'none',
+          backgroundSize: "cover",
+          backgroundColor: "#000", // Fallback color
+        }}
+      >
 
 
  
@@ -126,5 +140,6 @@ const isMobile = useMobile();
         </div>
       </div>
     </section>
+    </>
   );
 }
