@@ -70,12 +70,14 @@ const Contact = () => {
           </div>
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
-               className="w-full rounded-[20px]"
-            style={{ 
-              border: "none", 
-              height: "870px",
-              minHeight: "1040px"
-            }}
+              className="w-full rounded-[20px]" 
+              style={{  
+                border: "none",  
+                height: "auto",
+                minHeight: "1100px", // Increased min height to accommodate dropdown expansion
+                maxHeight: "1400px", // Set max height to prevent excessive growth
+                overflow: "hidden" // Hide iframe scrollbars
+              }} 
            id="inline-JHxFvBGJog1VN2TzWxc4" 
     data-layout="{'id':'INLINE'}"
     data-trigger-type="alwaysShow"
