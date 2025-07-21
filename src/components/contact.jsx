@@ -73,8 +73,8 @@ const Contact = () => {
                className="w-full rounded-[20px]"
             style={{ 
               border: "none", 
-              height: "850px",
-              minHeight: "1033px"
+              height: "870px",
+              minHeight: "1040px"
             }}
            id="inline-JHxFvBGJog1VN2TzWxc4" 
     data-layout="{'id':'INLINE'}"
