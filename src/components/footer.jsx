@@ -42,6 +42,9 @@ const Footer = () => {
                                     sales@otf.marketing
                                 </p>
                                 <p className="text-[16px] font-normal font-montserrat leading-relaxed">
+                                    Phone number
+                                </p>
+     <p className="text-[16px] font-normal font-montserrat leading-relaxed">
                                     813-669-7356
                                 </p>
                             </div>
@@ -162,6 +165,7 @@ const Footer = () => {
                         <div className="space-y-2">
                             <p className="text-[15px] font-normal font-montserrat">Mail us directly</p>
                             <p className="text-[14px] font-montserrat">sales@otf.marketing</p>
+                            <p className="text-[14px] font-montserrat">Phone number</p>
                             <p className="text-[14px] font-montserrat">813-669-7356</p>
                         </div>
                     </div>

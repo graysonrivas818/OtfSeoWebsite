@@ -15,7 +15,7 @@ import afterIcon from '/assets/After.png';
 import beforeIcon from '/assets/Before.png';
 import mover from '/assets/Drag_Handle.png';
 // import mover from '/assets/switch-base.png';
-import backgroundImage from "/assets/full_service_bg.webp";
+import backgroundImage from "/assets/full_service_bg.png";
 
 export default function FullServiceSEO() {
 

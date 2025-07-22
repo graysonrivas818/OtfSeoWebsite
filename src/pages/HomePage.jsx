@@ -126,119 +126,142 @@
 //     </div>
 //   );
 // }
-
-
-import { lazy, Suspense, useState } from 'react';
-import { Helmet } from 'react-helmet';
-import ErrorBoundary from '../components/ErrorBoundary.jsx';
+import { lazy, Suspense, useState, useEffect } from 'react';
 
 // Critical above-the-fold component (load immediately)
 import MarketingHero from '../components/marketing-hero.jsx';
 
-// Lazy-loaded components
-const Seolandinglocal = lazy(() => import('../components/seo-landing-local.jsx'));
-const Guaranted = lazy(() => import('../components/guaranted_ranking.jsx'));
-const FullServiceSEO = lazy(() => import('../components/full_service_seo.jsx'));
-const BusinessProfileRanking = lazy(() => import('../components/businees_profile_ranking.jsx'));
-const MissionRankOne = lazy(() => import('../components/mission_rank_one.jsx'));
-const IPhone16ProSection = lazy(() => import('../components/iphone16_pro_section.jsx'));
-const GuaranteedResults = lazy(() => import('../components/GuaranteedResults.jsx'));
-const LogoSlider = lazy(() => import('../components/logos_slide.jsx'));
-const Testimonial = lazy(() => import('../components/testinomials.jsx'));
-const WhoWeAre = lazy(() => import('../components/who_are_we.jsx'));
-const BrowsePlans = lazy(() => import('../components/browse_plan.jsx'));
-const Enterprise = lazy(() => import('../components/enterprise.jsx'));
-const FAQ = lazy(() => import('../components/faq.jsx'));
-const Footer = lazy(() => import('../components/footer.jsx'));
-const PromotionalBanner = lazy(() => import('../components/promotional_banner.jsx'));
-
-// Prefetch configuration
-const prefetchComponents = {
-  services: () => import('../components/seo-landing-local.jsx'),
-  portfolio: () => import('../components/full_service_seo.jsx'),
-  seoteam: () => import('../components/who_are_we.jsx'),
-  pricing: () => import('../components/browse_plan.jsx')
-};
+// Lazy-loaded components with explicit chunk names for better debugging
+const Seolandinglocal = lazy(() => import(/* webpackChunkName: "services" */ '../components/seo-landing-local.jsx'));
+const Guaranted = lazy(() => import(/* webpackChunkName: "guarantee" */ '../components/guaranted_ranking.jsx'));
+const FullServiceSEO = lazy(() => import(/* webpackChunkName: "portfolio" */ '../components/full_service_seo.jsx'));
+const BusinessProfileRanking = lazy(() => import(/* webpackChunkName: "business" */ '../components/businees_profile_ranking.jsx'));
+const MissionRankOne = lazy(() => import(/* webpackChunkName: "mission" */ '../components/mission_rank_one.jsx'));
+const IPhone16ProSection = lazy(() => import(/* webpackChunkName: "iphone" */ '../components/iphone16_pro_section.jsx'));
+const GuaranteedResults = lazy(() => import(/* webpackChunkName: "results" */ '../components/GuaranteedResults.jsx'));
+const LogoSlider = lazy(() => import(/* webpackChunkName: "logos" */ '../components/logos_slide.jsx'));
+const Testimonial = lazy(() => import(/* webpackChunkName: "testimonials" */ '../components/testinomials.jsx'));
+const WhoWeAre = lazy(() => import(/* webpackChunkName: "team" */ '../components/who_are_we.jsx'));
+const BrowsePlans = lazy(() => import(/* webpackChunkName: "pricing" */ '../components/browse_plan.jsx'));
+const Enterprise = lazy(() => import(/* webpackChunkName: "enterprise" */ '../components/enterprise.jsx'));
+const FAQ = lazy(() => import(/* webpackChunkName: "faq" */ '../components/faq.jsx'));
+const Footer = lazy(() => import(/* webpackChunkName: "footer" */ '../components/footer.jsx'));
+const PromotionalBanner = lazy(() => import(/* webpackChunkName: "banner" */ '../components/promotional_banner.jsx'));
 
 export default function HomePage() {
   const [prefetched, setPrefetched] = useState({});
 
+  // Preload critical components on mount
+  useEffect(() => {
+    import('../components/seo-landing-local.jsx');
+    import('../components/guaranted_ranking.jsx');
+  }, []);
+
   const handlePrefetch = (component) => {
     if (!prefetched[component]) {
-      prefetchComponents[component]();
+      switch(component) {
+        case 'services':
+          import('../components/seo-landing-local.jsx');
+          break;
+        case 'portfolio':
+          import('../components/full_service_seo.jsx');
+          break;
+        case 'seoteam':
+          import('../components/who_are_we.jsx');
+          break;
+        case 'pricing':
+          import('../components/browse_plan.jsx');
+          break;
+      }
       setPrefetched(prev => ({ ...prev, [component]: true }));
     }
   };
 
   return (
     <>
-
-      {/* Critical content */}
-      <section id="seo">
+      {/* Critical content - loaded immediately */}
+      <section id="seo" className="critical-section">
         <MarketingHero fetchpriority="high" />
       </section>
 
-      {/* Lazy-loaded content */}
-      <ErrorBoundary fallback={<div className="p-4 text-red-500">Failed to load content</div>}>
-        <Suspense fallback={<LoadingPlaceholder />}>
-          <section 
-            id="services" 
-            onMouseEnter={() => handlePrefetch('services')}
-          >
-            <Seolandinglocal />
-          </section>
+      {/* Main content with multiple suspense boundaries */}
+      <Suspense fallback={<LoadingPlaceholder />}>
+        {/* First content section with preloading */}
+        <section 
+          id="services" 
+          className="interactive-section"
+          onMouseEnter={() => handlePrefetch('services')}
+          onFocus={() => handlePrefetch('services')}
+        >
+          <Seolandinglocal />
+        </section>
 
-          <Guaranted />
+        <Guaranted />
 
-          <section 
-            id="portfolio"
-            onMouseEnter={() => handlePrefetch('portfolio')}
-          >
-            <FullServiceSEO />
-          </section>
+        {/* Portfolio section with preloading */}
+        <section 
+          id="portfolio"
+          className="interactive-section"
+          onMouseEnter={() => handlePrefetch('portfolio')}
+          onFocus={() => handlePrefetch('portfolio')}
+        >
+          <FullServiceSEO />
+        </section>
 
-          <BusinessProfileRanking />
-          <MissionRankOne />
-          <IPhone16ProSection />
-          <GuaranteedResults />
-          <LogoSlider />
-          <Testimonial />
+        {/* Non-critical sections */}
+        <BusinessProfileRanking />
+        <MissionRankOne />
+        <IPhone16ProSection />
+        <GuaranteedResults />
+        <LogoSlider />
+        <Testimonial />
 
-          <section 
-            id="seoteam"
-            onMouseEnter={() => handlePrefetch('seoteam')}
-          >
-            <WhoWeAre />
-          </section>
+        {/* Team section with preloading */}
+        <section 
+          id="seoteam"
+          className="interactive-section"
+          onMouseEnter={() => handlePrefetch('seoteam')}
+          onFocus={() => handlePrefetch('seoteam')}
+        >
+          <WhoWeAre />
+        </section>
 
-          <section 
-            id="pricing"
-            onMouseEnter={() => handlePrefetch('pricing')}
-          >
-            <BrowsePlans />
-          </section>
+        {/* Pricing section with preloading */}
+        <section 
+          id="pricing"
+          className="interactive-section"
+          onMouseEnter={() => handlePrefetch('pricing')}
+          onFocus={() => handlePrefetch('pricing')}
+        >
+          <BrowsePlans />
+        </section>
 
-          <Enterprise />
-          <FAQ />
-          <PromotionalBanner />
-          <Footer />
-        </Suspense>
-      </ErrorBoundary>
+        {/* Footer sections */}
+        <Enterprise />
+        <FAQ />
+        <PromotionalBanner />
+        <Footer />
+      </Suspense>
     </>
   );
 }
 
-// Loading component
+// Improved loading placeholder with better accessibility
 function LoadingPlaceholder() {
   return (
-    <div className="flex justify-center items-center min-h-[50vh]">
-      <div className="animate-pulse flex space-x-4">
-        <div className="rounded-full bg-gray-200 h-12 w-12"></div>
+    <div 
+      className="flex justify-center items-center min-h-[50vh]"
+      role="status"
+      aria-live="polite"
+      aria-label="Loading content"
+    >
+      <div className="animate-pulse flex space-x-4 w-full max-w-md">
+        <div className="rounded-full bg-gray-200 h-12 w-12 dark:bg-gray-700"></div>
         <div className="flex-1 space-y-4 py-1">
-          <div className="h-4 bg-gray-200 rounded w-3/4"></div>
+          <div className="h-4 bg-gray-200 rounded w-3/4 dark:bg-gray-700"></div>
           <div className="space-y-2">
-            <div className="h-4 bg-gray-200 rounded"></div>
-            <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+            <div className="h-4 bg-gray-200 rounded dark:bg-gray-700"></div>
+            <div className="h-4 bg-gray-200 rounded w-5/6 dark:bg-gray-700"></div>
           </div>
         </div>
       </div>

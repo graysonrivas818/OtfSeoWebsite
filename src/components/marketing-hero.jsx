@@ -1,11 +1,11 @@
 import React from "react";
-// import backgroundImage from "/assets/Header.webp";
-// import mobilebackgroundImage from "/assets/heromobile.webp";
-import dashboardImage1 from "/assets/Group 1686555164.webp";
+import backgroundImage from "/assets/Header.png";
+import mobilebackgroundImage from "/assets/heromobile.png";
+import dashboardImage1 from "/assets/Group 1686555164.png";
 import logo1 from "/assets/image 15.png";
 import logo2 from "/assets/slider_logo_6.png";
 import { useNavigate } from 'react-router-dom'
-import '../App.css'
+
 export default function MarketingLanding() {
 
 function useMobile(){
@@ -24,8 +24,10 @@ const isMobile = useMobile();
   const navigate = useNavigate()
   return (
 
-<section className={`w-full min-h-screen ${isMobile ? 'hero-mobile' : 'hero-desktop'}`}>
-
+    <section
+      className="w-full bg-cover  bg-no-repeat"
+      style={{ backgroundImage: `url(${isMobile ? mobilebackgroundImage : backgroundImage})`, backgroundSize: "100% 100%" }}
+    >
 
 
  
