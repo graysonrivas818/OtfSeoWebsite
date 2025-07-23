@@ -130,9 +130,10 @@ import { lazy, Suspense, useState, useEffect } from 'react';
 
 // Critical above-the-fold component (load immediately)
 import MarketingHero from '../components/marketing-hero.jsx';
+import Seolandinglocal from '../components/seo-landing-local.jsx';
 
 // Lazy-loaded components with explicit chunk names for better debugging
-const Seolandinglocal = lazy(() => import(/* webpackChunkName: "services" */ '../components/seo-landing-local.jsx'));
+// const Seolandinglocal = lazy(() => import(/* webpackChunkName: "services" */ '../components/seo-landing-local.jsx'));
 const Guaranted = lazy(() => import(/* webpackChunkName: "guarantee" */ '../components/guaranted_ranking.jsx'));
 const FullServiceSEO = lazy(() => import(/* webpackChunkName: "portfolio" */ '../components/full_service_seo.jsx'));
 const BusinessProfileRanking = lazy(() => import(/* webpackChunkName: "business" */ '../components/businees_profile_ranking.jsx'));
@@ -184,17 +185,19 @@ export default function HomePage() {
         <MarketingHero fetchpriority="high" />
       </section>
 
-      {/* Main content with multiple suspense boundaries */}
-      <Suspense fallback={<LoadingPlaceholder />}>
-        {/* First content section with preloading */}
         <section 
           id="services" 
-          className="interactive-section"
+          // className="interactive-section"
           onMouseEnter={() => handlePrefetch('services')}
           onFocus={() => handlePrefetch('services')}
         >
           <Seolandinglocal />
         </section>
+
+      {/* Main content with multiple suspense boundaries */}
+      <Suspense fallback={<LoadingPlaceholder />}>
+        {/* First content section with preloading */}
+
 
         <Guaranted />
 

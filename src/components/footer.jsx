@@ -44,9 +44,12 @@ const Footer = () => {
                                 <p className="text-[16px] font-normal font-montserrat leading-relaxed">
                                     Phone number
                                 </p>
-     <p className="text-[16px] font-normal font-montserrat leading-relaxed">
-                                    813-669-7356
-                                </p>
+   <p 
+  className="text-[16px] font-normal font-montserrat leading-relaxed hover:underline cursor-pointer"
+  onClick={() => window.location.href = 'tel:813-669-7356'}
+>
+  813-669-7356
+</p>
                             </div>
                         </div>
 
@@ -166,7 +169,7 @@ const Footer = () => {
                             <p className="text-[15px] font-normal font-montserrat">Mail us directly</p>
                             <p className="text-[14px] font-montserrat">sales@otf.marketing</p>
                             <p className="text-[14px] font-montserrat">Phone number</p>
-                            <p className="text-[14px] font-montserrat">813-669-7356</p>
+                            <p className="text-[14px] font-montserrat"  onClick={() => window.location.href = 'tel:813-669-7356' }>813-669-7356</p>
                         </div>
                     </div>
 

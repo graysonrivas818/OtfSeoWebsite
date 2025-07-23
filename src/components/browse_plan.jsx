@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import browsePlanBg from "/assets/Browse_plan_bg.webp";
+import browsePlanBg from "/assets/Browse_plan_bg.png";
 import otfForPricing from "/assets/otf_for_pricing.png";
 
 const BrowsePlans = () => {

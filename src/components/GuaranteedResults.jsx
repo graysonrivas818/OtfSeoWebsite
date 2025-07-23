@@ -1,4 +1,4 @@
-import backgroundImage from "/assets/gurarented_result_bg.webp";
+import backgroundImage from "/assets/gurarented_result_bg.png";
 import resultImage1 from "/assets/gurarented_result_1.png";
 import resultImage2 from "/assets/gurarented_result_2.png";
 import resultImage3 from "/assets/gurarented_result_3.png";
