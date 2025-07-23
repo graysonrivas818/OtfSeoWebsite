@@ -49,10 +49,77 @@
 
 
 
+// import backgroundImage from "/assets/Header.webp";
+// import Footer from "./footer";
+
+// const Contact = () => {
+//   return (
+//     <>
+//       <section
+//         className="w-full bg-cover bg-no-repeat overflow-auto"
+//         style={{
+//           backgroundImage: `url(${backgroundImage})`,
+//           backgroundSize: "100% 100%",
+//         }}
+//       >
+//         <div className="pt-20 px-4 pb-18">
+//           <div className="mb-12 text-center">
+//             <h2 className="text-4xl leading-[36px] text-center font-bold font-montserrat text-white">
+//               Work With Us
+//             </h2>
+//           </div>
+//           <iframe
+//             src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
+//             className="w-full"
+//             style={{  
+//               border: "none !important", 
+//               height: "auto",
+//               minHeight: "1100px",
+//               maxHeight: "1400px",
+//               overflow: "hidden",
+//               outline: "none"
+//             }}
+//             id="inline-JHxFvBGJog1VN2TzWxc4"
+//             data-layout="{'id':'INLINE'}"
+//             data-trigger-type="alwaysShow"
+//             data-trigger-value=""
+//             data-activation-type="alwaysActivated"
+//             data-activation-value=""
+//             data-deactivation-type="neverDeactivate"
+//             data-deactivation-value=""
+//             data-form-name="SEO"
+//             data-height="960"
+//             data-layout-iframe-id="inline-JHxFvBGJog1VN2TzWxc4"
+//             data-form-id="JHxFvBGJog1VN2TzWxc4"
+//             title="SEO"
+//           ></iframe>
+//         </div>
+//       </section>
+//       <Footer />
+//       {/* Script for form embed functionality */}
+//       <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+//     </>
+//   );
+// };
+
+// export default Contact;
+
 import backgroundImage from "/assets/Header.webp";
 import Footer from "./footer";
+import { useEffect } from "react";
 
 const Contact = () => {
+  // Prevent zooming on focus (optional)
+  useEffect(() => {
+    const inputs = document.querySelectorAll("input, textarea, select");
+    inputs.forEach(input => {
+      input.addEventListener("focus", () => {
+        window.scrollTo(0, 0);
+        document.body.style.zoom = "100%";
+      });
+    });
+  }, []);
+
   return (
     <>
       <section
@@ -96,7 +163,6 @@ const Contact = () => {
         </div>
       </section>
       <Footer />
-      {/* Script for form embed functionality */}
       <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     </>
   );
