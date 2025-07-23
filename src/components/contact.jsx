@@ -72,13 +72,15 @@ const Contact = () => {
             src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
             className="w-full"
             style={{  
-              border: "none !important", 
-              height: "auto",
-              minHeight: "1100px",
-              maxHeight: "1400px",
-              overflow: "hidden",
-              outline: "none"
-            }}
+  border: "none !important", 
+  height: "auto",
+  minHeight: "1100px",
+  maxHeight: "1400px",
+  overflow: "hidden",
+  outline: "none",
+  WebkitTransform: "translateZ(0)",
+  transform: "translateZ(0)"
+}}
             id="inline-JHxFvBGJog1VN2TzWxc4"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
