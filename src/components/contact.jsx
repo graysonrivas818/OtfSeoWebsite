@@ -70,29 +70,28 @@ const Contact = () => {
           </div>
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
-              className="w-full" 
-              style={{  
-                border: "none !important", 
-                height: "auto",
-                minHeight: "1100px", // Increased min height to accommodate dropdown expansion
-                maxHeight: "1400px", // Set max height to prevent excessive growth
-                overflow: "hidden", // Hide iframe scrollbars
-                 outline: "none"
-              }} 
-           id="inline-JHxFvBGJog1VN2TzWxc4" 
-    data-layout="{'id':'INLINE'}"
-    data-trigger-type="alwaysShow"
-    data-trigger-value=""
-    data-activation-type="alwaysActivated"
-    data-activation-value=""
-    data-deactivation-type="neverDeactivate"
-    data-deactivation-value=""
-    data-form-name="SEO"
-    data-height="960"
-    data-layout-iframe-id="inline-JHxFvBGJog1VN2TzWxc4"
-    data-form-id="JHxFvBGJog1VN2TzWxc4"
-    title="SEO"
-
+            className="w-full"
+            style={{  
+              border: "none !important", 
+              height: "auto",
+              minHeight: "1100px",
+              maxHeight: "1400px",
+              overflow: "hidden",
+              outline: "none"
+            }}
+            id="inline-JHxFvBGJog1VN2TzWxc4"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="SEO"
+            data-height="960"
+            data-layout-iframe-id="inline-JHxFvBGJog1VN2TzWxc4"
+            data-form-id="JHxFvBGJog1VN2TzWxc4"
+            title="SEO"
           ></iframe>
         </div>
       </section>
