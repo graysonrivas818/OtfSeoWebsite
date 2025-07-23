@@ -51,35 +51,8 @@
 
 import backgroundImage from "/assets/Header.webp";
 import Footer from "./footer";
-import { useEffect } from 'react';
 
 const Contact = () => {
-  useEffect(() => {
-    const iframe = document.getElementById('inline-JHxFvBGJog1VN2TzWxc4');
-    
-    const injectStyles = () => {
-      if (iframe?.contentDocument) {
-        const style = iframe.contentDocument.createElement('style');
-        style.textContent = `
-          input, 
-          textarea, 
-          select {
-            font-size: 16px !important;
-            min-height: 44px !important; /* Better touch target */
-          }
-        `;
-        iframe.contentDocument.head.appendChild(style);
-      }
-    };
-
-    // Wait for iframe to load
-    iframe?.addEventListener('load', injectStyles);
-    
-    return () => {
-      iframe?.removeEventListener('load', injectStyles);
-    };
-  }, []);
-  
   return (
     <>
       <section
@@ -97,7 +70,6 @@ const Contact = () => {
           </div>
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
-
             className="w-full"
             style={{  
               border: "none !important", 
@@ -107,7 +79,7 @@ const Contact = () => {
               overflow: "hidden",
               outline: "none"
             }}
-      id="inline-JHxFvBGJog1VN2TzWxc4"
+            id="inline-JHxFvBGJog1VN2TzWxc4"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
             data-trigger-value=""
