@@ -51,8 +51,95 @@
 
 import backgroundImage from "/assets/Header.webp";
 import Footer from "./footer";
+import { useEffect } from 'react';
 
 const Contact = () => {
+useEffect(() => {
+    // Method 1: Add viewport meta tag to prevent zoom
+    const addViewportMeta = () => {
+      let viewport = document.querySelector('meta[name="viewport"]');
+      if (!viewport) {
+        viewport = document.createElement('meta');
+        viewport.name = 'viewport';
+        document.head.appendChild(viewport);
+      }
+      viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    };
+
+    // Method 2: Add CSS to prevent zoom on form elements
+    const addZoomPreventionCSS = () => {
+      const style = document.createElement('style');
+      style.textContent = `
+        /* Prevent zoom on iOS devices */
+        input, select, textarea {
+          font-size: 16px !important;
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+        }
+        
+        /* Additional iframe styling to prevent zoom */
+        iframe {
+          -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+          -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Prevent zoom on touch */
+        * {
+          touch-action: manipulation;
+        }
+      `;
+      document.head.appendChild(style);
+    };
+
+    // Method 3: Handle iframe load and try to communicate with it
+    const handleIframeLoad = () => {
+      const iframe = document.getElementById('inline-JHxFvBGJog1VN2TzWxc4');
+      if (iframe) {
+        try {
+          // Add touch-action to iframe
+          iframe.style.touchAction = 'manipulation';
+          
+          // Try to access iframe content (will only work if same-origin)
+          if (iframe.contentDocument) {
+            const iframeHead = iframe.contentDocument.head;
+            if (iframeHead) {
+              const iframeStyle = iframe.contentDocument.createElement('style');
+              iframeStyle.textContent = `
+                input, select, textarea, button {
+                  font-size: 16px !important;
+                  -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+                }
+                * {
+                  touch-action: manipulation;
+                }
+              `;
+              iframeHead.appendChild(iframeStyle);
+            }
+          }
+        } catch (e) {
+          console.log('Cannot access iframe content due to CORS policy');
+        }
+      }
+    };
+
+    addViewportMeta();
+    addZoomPreventionCSS();
+
+    // Wait for iframe to load
+    const iframe = document.getElementById('inline-JHxFvBGJog1VN2TzWxc4');
+    if (iframe) {
+      iframe.addEventListener('load', handleIframeLoad);
+    }
+
+    return () => {
+      if (iframe) {
+        iframe.removeEventListener('load', handleIframeLoad);
+      }
+    };
+  }, []);
+
   return (
     <>
       <section
@@ -68,19 +155,21 @@ const Contact = () => {
               Work With Us
             </h2>
           </div>
-          <iframe
+ <iframe
             src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
             className="w-full"
             style={{  
-  border: "none !important", 
-  height: "auto",
-  minHeight: "1100px",
-  maxHeight: "1400px",
-  overflow: "hidden",
-  outline: "none",
-  WebkitTransform: "translateZ(0)",
-  transform: "translateZ(0)"
-}}
+              border: "none !important", 
+              height: "auto",
+              minHeight: "1100px",
+              maxHeight: "1400px",
+              overflow: "hidden",
+              outline: "none",
+              WebkitTransform: "translateZ(0)",
+              transform: "translateZ(0)",
+              touchAction: "manipulation", // Prevent zoom on touch
+              WebkitOverflowScrolling: "touch"
+            }}
             id="inline-JHxFvBGJog1VN2TzWxc4"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
