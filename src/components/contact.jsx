@@ -70,13 +70,14 @@ const Contact = () => {
           </div>
           <iframe
             src="https://api.leadconnectorhq.com/widget/form/JHxFvBGJog1VN2TzWxc4"
-              className="w-full rounded-[20px]" 
+              className="w-full" 
               style={{  
-                border: "none",  
+                border: "none !important", 
                 height: "auto",
                 minHeight: "1100px", // Increased min height to accommodate dropdown expansion
                 maxHeight: "1400px", // Set max height to prevent excessive growth
-                overflow: "hidden" // Hide iframe scrollbars
+                overflow: "hidden", // Hide iframe scrollbars
+                 outline: "none"
               }} 
            id="inline-JHxFvBGJog1VN2TzWxc4" 
     data-layout="{'id':'INLINE'}"
