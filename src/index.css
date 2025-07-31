@@ -36,58 +36,15 @@
   font-weight: 400;
   font-style: normal;
 }
+/* Weight utilities */
+.font-thin { font-weight: 100 !important; }
+.font-light { font-weight: 300 !important; }
+.font-regular { font-weight: 400 !important; }
+.font-medium { font-weight: 500 !important; }
+.font-semibold { font-weight: 600 !important; }
+.font-bold { font-weight: 700 !important; }
+.font-extrabold { font-weight: 800 !important; }
+.font-black { font-weight: 900 !important; }
 
-/* Regular 400 Italic */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Italic.ttf') format('truetype'); 
-  font-weight: 400;
-  font-style: italic;
-}
-
-/* Medium 500 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Medium.ttf') format('truetype'); 
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-
-/* SemiBold 600 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-SemiBold.ttf') format('truetype'); 
-  font-weight: 600;
-  font-style: normal;
-}
-
-
-/* Bold 700 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Bold.ttf') format('truetype'); 
-  font-weight: 700;
-  font-style: normal;
-}
-
-
-/* ExtraBold 800 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-ExtraBold.ttf') format('truetype'); 
-  font-weight: 800;
-  font-style: normal;
-}
-
-
-
-/* Black 900 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Black.ttf') format('truetype'); 
-  font-weight: 900;
-  font-style: normal;
-}
-
+/* Italic utility */
+.font-italic { font-style: italic !important; }
