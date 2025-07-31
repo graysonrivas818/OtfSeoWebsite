@@ -49,7 +49,7 @@
 
 
 
-import backgroundImage from "/assets/Header.webp";
+import backgroundImage from "/assets/Header.png";
 import Footer from "./footer";
 import { useEffect } from 'react';
 

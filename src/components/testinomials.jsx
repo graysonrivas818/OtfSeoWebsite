@@ -4,7 +4,7 @@ import { Star } from 'lucide-react';
 import logo1 from '/assets/testinomial_logo1.png';
 import logo2 from '/assets/testinomial_logo2.png';
 import logo3 from '/assets/testinomial_logo3.png';
-import backgroundImage from "/assets/testinomial_bg.webp";
+import backgroundImage from "/assets/testinomial_bg.png";
 import testinomial_bg_mobile from '/assets/testinomial_bg_mobile.png';
 // import cardsBackground from "/assets/cards_bg.png";
 import cardsBackground from "/assets/cards_bg1.png";
