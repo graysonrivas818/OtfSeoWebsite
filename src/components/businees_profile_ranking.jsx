@@ -20,52 +20,40 @@ export default function BusinessProfileRanking() {
           {/* Left Content */}
           <div className="order-1 lg:order-1 text-white space-y-8 p-6">
             <div>
-              <h1 className="text-3xl sm:text-3xl lg:text-3xl xl:text-[43px] font-bold font-montserrat">
-                {/* Large screens */}
-                <div className="hidden lg:block leading-18">
-                  <span className="text-[#0063FF]">Professional </span>
-                  <span className="text-[#EA4335]">G</span>
-                  <span className="text-[#FBBC05]">o</span>
-                  <span className="text-[#34A853]">o</span>
-                  <span className="text-[#4285F4]">g</span>
-                  <span className="text-[#EA4335]">l</span>
-                  <span className="text-[#34A853]">e </span>   
-                  <span className="text-white ">My</span>
-                  {/* <br /> */}
-                  <span className="text-white block">
-                   Business Profile Ranking
-                  </span>
-                </div>
+             <h1 className="text-3xl sm:text-3xl lg:text-3xl xl:text-[43px] font-bold font-montserrat">
+  {/* Large screens */}
+  <div className="hidden lg:block leading-[72px]">
+    <span className="text-[#0063FF]">Professional </span>
+    <span className="text-[#EA4335]">G</span>
+    <span className="text-[#FBBC05]">o</span>
+    <span className="text-[#34A853]">o</span>
+    <span className="text-[#4285F4]">g</span>
+    <span className="text-[#EA4335]">l</span>
+    <span className="text-[#34A853]">e </span>   
+    <span className="text-white">My</span>
+    <span className="text-white block">
+     Business Profile Ranking
+    </span>
+  </div>
 
-                {/* Small/medium screens */}
-                <div className="lg:hidden text-center pb-5 leading-12">
-                  <div className="inline-block">
-                    <div>
-                      <span className="text-[#0063FF] text-4xl">
-                        Professional
-                      </span>
-                    </div>
-                    <div>
-                      <span className="text-[#EA4335] text-4xl">G</span>
-                      <span className="text-[#FBBC05] text-4xl">o</span>
-                      <span className="text-[#34A853] text-4xl">o</span>
-                      <span className="text-[#4285F4] text-4xl">g</span>
-                      <span className="text-[#EA4335] text-4xl">l</span>
-                      <span className="text-[#34A853] text-4xl">e</span> 
-                    </div>
-                    <div>
-                      <span className="text-white text-4xl">
-                        My Business Profile Ranking
-                      </span>
-                    </div>
-                    {/* <div>
-                      <span className="text-white text-4xl">
-                        
-                      </span>
-                    </div> */}
-                  </div>
-                </div>
-              </h1>
+  {/* Small/medium screens */}
+  <div className="lg:hidden text-center pb-5 text-4xl leading-[48px]">
+    <div>
+      <span className="text-[#0063FF]">Professional</span>
+    </div>
+    <div>
+      <span className="text-[#EA4335]">G</span>
+      <span className="text-[#FBBC05]">o</span>
+      <span className="text-[#34A853]">o</span>
+      <span className="text-[#4285F4]">g</span>
+      <span className="text-[#EA4335]">l</span>
+      <span className="text-[#34A853]">e</span> 
+    </div>
+    <div>
+      <span className="text-white">My Business Profile Ranking</span>
+    </div>
+  </div>
+</h1>
 
               <p className="text-[16px] sm:text-xl text-white max-w-[650px] font-normal font-montserrat leading-10">
                 A roofing company moved from spot #7 to #2 in the map pack for

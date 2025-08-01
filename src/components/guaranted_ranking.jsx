@@ -38,13 +38,13 @@ export default function LocalSEOLanding() {
                     <span className="whitespace-nowrap text-[#0063FF]">
                       Climb to the <span className="text-white">#1 Spot on </span>
                       <br />
-                      <span className="text-[#EA4335]">G</span>
-                      <span className="text-[#FBBC05]">o</span>
-                      <span className="text-[#34A853]">o</span>
-                      <span className="text-[#4285F4]">g</span>
-                      <span className="text-[#EA4335]">l</span>
-                      <span className="text-[#34A853]">e</span>
-                      <span className="text-white"> Maps Guaranteed!</span>
+                     <span className="text-[#EA4335]">G</span>
+      <span className="text-[#FBBC05]">o</span>
+      <span className="text-[#34A853]">o</span>
+      <span className="text-[#4285F4]">g</span>
+      <span className="text-[#EA4335]">l</span>
+      <span className="text-[#34A853]">e</span>
+      <span className="text-white"> Maps Guaranteed!</span>
                     </span>
                   </div>
                   {/* Mobile layout (lg-) - Stacked lines with centered text */}
@@ -52,17 +52,15 @@ export default function LocalSEOLanding() {
                     <div className="whitespace-nowrap">
                       <span className="text-[#0063FF] text-4xl">Climb to the #1 </span>
                     </div>
-                    <div className="whitespace-nowrap ">
-                      <span className="text-white text-4xl ">Spot on </span>
-                      {/* </div>
-                        <div className="whitespace-nowrap"> */}
-                      <span className="text-[#EA4335] text-4xl">G</span>
-                      <span className="text-[#FBBC05] text-4xl">o</span>
-                      <span className="text-[#34A853] text-4xl">o</span>
-                      <span className="text-[#4285F4] text-4xl">g</span>
-                      <span className="text-[#EA4335] text-4xl">l</span>
-                      <span className="text-[#34A853] text-4xl">e</span>
-                    </div>
+                    <div className="whitespace-nowrap text-4xl">
+      <span className="text-white">Spot on </span>
+      <span className="text-[#EA4335]">G</span>
+      <span className="text-[#FBBC05]">o</span>
+      <span className="text-[#34A853]">o</span>
+      <span className="text-[#4285F4]">g</span>
+      <span className="text-[#EA4335]">l</span>
+      <span className="text-[#34A853]">e</span>
+    </div>
                     <div className="whitespace-nowrap">
                       <span className="text-white text-4xl ">Maps</span>
                     </div>

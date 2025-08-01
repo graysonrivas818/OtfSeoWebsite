@@ -45,15 +45,15 @@ export default function LocalSEOLanding() {
                       <span className="text-[#0063FF] text-4xl font-montserrat">Rank Higher</span>
                       <span className="text-white text-4xl font-montserrat"> on</span>
                     </div>
-                    <div className="whitespace-nowrap text-4xl  font-montserra leading-13">
-                      {/* on{" "} */}
-                      <span className="text-[#EA4335] text-4xl font-montserrat">G</span>
-                      <span className="text-[#FBBC05] text-4xl font-montserrat">o</span>
-                      <span className="text-[#34A853] text-4xl font-montserrat">o</span>
-                      <span className="text-[#4285F4] text-4xl font-montserrat">g</span>
-                      <span className="text-[#EA4335] text-4xl font-montserrat">l</span>
-                      <span className="text-[#34A853] text-4xl font-montserrat">e</span> Maps &
-                    </div>
+                  <div className="whitespace-nowrap font-montserrat text-4xl leading-tight">
+      <span className="text-[#EA4335]">G</span>
+      <span className="text-[#FBBC05]">o</span>
+      <span className="text-[#34A853]">o</span>
+      <span className="text-[#4285F4]">g</span>
+      <span className="text-[#EA4335]">l</span>
+      <span className="text-[#34A853]">e</span>
+      <span className="text-white"> Maps &</span>
+    </div>
                     <div className="whitespace-nowrap">
                       <span className="text-white text-4xl font-montserrat  leading-13">Local Search in</span>
                     </div>
