@@ -9,33 +9,7 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Thin 100 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Thin.woff2') format('truetype'); 
-  font-weight: 100;
-  font-style: normal;
-}
 
-
-
-/* Light 300 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Italic.woff2') format('truetype'); 
-  font-weight: 300;
-  font-style: normal;
-}
-
-
-/* Regular 400 */
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Regular.woff2') format('truetype'); 
-  font-weight: 400;
-  font-style: normal;
-}
-/* Weight utilities */
 .font-thin { font-weight: 100 !important; }
 .font-light { font-weight: 300 !important; }
 .font-regular { font-weight: 400 !important; }
@@ -45,5 +19,5 @@
 .font-extrabold { font-weight: 800 !important; }
 .font-black { font-weight: 900 !important; }
 
-/* Italic utility */
+
 .font-italic { font-style: italic !important; }
