@@ -12,18 +12,17 @@
 /* Thin 100 */
 @font-face {
   font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Thin.ttf') format('truetype'); 
+  src: url('/src/fonts/Montserrat-Thin.woff2') format('truetype'); 
   font-weight: 100;
   font-style: normal;
 }
 
 
 
-
 /* Light 300 */
 @font-face {
   font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Light.ttf') format('truetype'); 
+  src: url('/src/fonts/Montserrat-Italic.woff2') format('truetype'); 
   font-weight: 300;
   font-style: normal;
 }
@@ -32,7 +31,7 @@
 /* Regular 400 */
 @font-face {
   font-family: 'Montserrat';
-  src: url('/src/fonts/Montserrat-Regular.ttf') format('truetype'); 
+  src: url('/src/fonts/Montserrat-Regular.woff2') format('truetype'); 
   font-weight: 400;
   font-style: normal;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "/assets/Header.png";
+import backgroundImage from "/assets/Header.webp";
 import mobilebackgroundImage from "/assets/heromobile.png";
 import dashboardImage1 from "/assets/Group 1686555164.png";
 import logo1 from "/assets/image 15.png";
