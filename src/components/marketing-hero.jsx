@@ -78,8 +78,7 @@ const isMobile = useMobile();
 
   {/* Paragraph stays the same for both */}
   <p className="text-[16px] sm:text-xl lg:text-xl m-7 text-white/80 leading-relaxed max-w-[315px] sm:max-w-lg mx-auto lg:mx-0 text-center lg:text-left font-normal font-montserrat">
-    OTF Marketing is the full service marketing company helps businesses
-    dominate on search. Get your business seen by customers consistently and
+    OTF Marketing specializes in helping businesses dominate on search. Get your business seen by customers consistently and
     watch your business grow.
   </p>
 </div>

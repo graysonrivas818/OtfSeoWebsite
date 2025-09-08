@@ -231,12 +231,12 @@ export default function HomePage() {
   return (
     <>
       {/* Critical components loaded normally */}
-      <section id="seo">
-        <MarketingHero />
+       <section id="seo" className="critical-section">
+         <MarketingHero fetchpriority="high" />
       </section>
 
       <section id="services">
-        <Seolandinglocal />
+        <Seolandinglocal fetchpriority="high" />
       </section>
 
       <Guaranted />
@@ -252,9 +252,9 @@ export default function HomePage() {
         <GuaranteedResults />
         <LogoSlider />
         <Testimonial />
-        <section id="seoteam">
+        {/* <section id="seoteam">
           <WhoWeAre />
-        </section>
+        </section> */}
         <section id="pricing">
           <BrowsePlans />
         </section>
